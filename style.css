@@ -121,7 +121,7 @@ body {
 .wrapper {
   text-align: center;
   background-image: linear-gradient(#ccc, #fff);
-  max-width: 1170px;
+  max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -151,6 +151,7 @@ body {
 img {
   display: inline-block;
   max-width: 150px;
+  max-height: 150px;
   object-fit: cover;
 }
 
@@ -167,7 +168,7 @@ img {
 }
 
 .cart:hover .price {
-  color: #66c05d;
+  color: #000000;
   font-weight: 700;
 }
 
@@ -180,7 +181,7 @@ img {
   outline: none;
   display: inline-block;
   padding: 10px 20px;
-  background: #66c05d;
+  background: #000000;
   border-radius: 30px;
   transition: scale 0.1s ease-in;
   color: #fff;
@@ -189,5 +190,9 @@ img {
 
 .button:hover button {
   transform: scale(1.1);
-  background-color: #833e98;
+  background-color: #d31cc4;
+}
+img[type="trash"]{
+  height: 30px;
+  margin-inline-start: 85ex;
 }
