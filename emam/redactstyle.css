@@ -8,10 +8,6 @@ nav {
   .h{
 position: relative;
   }
-  .hahah{
-    margin-top: 10px;
-    padding: 100%;
-  }
   nav ul {
     list-style: none;
     margin: 0;
@@ -59,57 +55,6 @@ position: relative;
     top: 0;
   }
   
-  @media screen and (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav ul li {
-      margin-right: 0;
-    }
-  
-    nav ul li:hover > ul {
-      display: block;
-      position: static;
-    }
-  
-    nav ul ul {
-      display: none;
-      position: static;
-      background-color: #f0f0f0;
-      padding: 10px;
-      border: 1px solid #ccc;
-    }
-  
-    nav ul ul li {
-      width: 100%;
-    }
-  }
-  /* Скрываем выпадающее меню по умолчанию */
-.dropdown-menu {
-  display: none;
-}
-
-/* Отображаем выпадающее меню при наведении на элемент */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* Добавляем анимацию */
-.dropdown-menu {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .wrapper{
   text-align: center;
   background-image: linear-gradient(#ccc, #fff);
@@ -135,6 +80,7 @@ textarea {
     padding: 5px;
     height: 40px;
     margin-top: 2%;
+    margin-right: 100ex;
     outline: none;
   }
   input[type="text"] {
@@ -171,13 +117,13 @@ textarea {
   }
   label{
     color: #000000;
-    margin-left: -10%;
+    margin-right: 100ex;
   }
   .right-part{
     margin-top: 10%;
   }
   .left-part{
-    margin-top: 13%;
+    margin-top: 9%;
   }
   A{
     color:#000000;
