@@ -194,5 +194,7 @@ img {
 }
 img[type="trash"]{
   height: 30px;
-  margin-inline-start: 85ex;
+}
+.trash{
+  margin-left: 80ex;
 }
