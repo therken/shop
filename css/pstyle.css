@@ -58,58 +58,6 @@ position: relative;
     left: 100%;
     top: 0;
   }
-  
-  @media screen and (max-width: 768px) {
-    nav ul {
-      flex-direction: column;
-    }
-  
-    nav ul li {
-      margin-right: 0;
-    }
-  
-    nav ul li:hover > ul {
-      display: block;
-      position: static;
-    }
-  
-    nav ul ul {
-      display: none;
-      position: static;
-      background-color: #f0f0f0;
-      padding: 10px;
-      border: 1px solid #ccc;
-    }
-  
-    nav ul ul li {
-      width: 100%;
-    }
-  }
-  /* Скрываем выпадающее меню по умолчанию */
-.dropdown-menu {
-  display: none;
-}
-
-/* Отображаем выпадающее меню при наведении на элемент */
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-/* Добавляем анимацию */
-.dropdown-menu {
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 html,
 body {
@@ -121,78 +69,8 @@ body {
 .wrapper {
   text-align: center;
   background-image: linear-gradient(#ccc, #fff);
-  max-width: 1400px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.flex {
-  display: inline-flex;
-  padding: 30px 10px;
-}
-
-.cart {
-  width: 180px;
-  background-color: transparent;
-  border: 1px solid transparent;
-  transition: 0.1s ease-in;
-}
-.cart:hover {
-  background: #fff;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 20px #fff;
-}
-
-.cart:not(:first-child) {
-  margin-left: 20px;
-}
-
-img {
-  display: inline-block;
-  max-width: 150px;
-  max-height: 150px;
-  object-fit: cover;
-}
-
-.description {
-  font-size: 14px;
-  text-align: left;
-  width: 90%;
-  margin: 20px auto;
-}
-
-.price {
-  margin: 20px auto;
-  transition: color 0.1s ease-in;
-}
-
-.cart:hover .price {
-  color: #000000;
-  font-weight: 700;
-}
-
-.button {
-  margin: 20px auto;
-}
-
-.button button {
-  border: none;
-  outline: none;
-  display: inline-block;
-  padding: 10px 20px;
-  background: #000000;
-  border-radius: 30px;
-  transition: scale 0.1s ease-in;
-  color: #fff;
-  cursor: pointer;
-}
-
-.button:hover button {
-  transform: scale(1.1);
-  background-color: #d31cc4;
-}
-img[type="trash"]{
-  height: 30px;
-  margin-inline-start: 85ex;
-}
