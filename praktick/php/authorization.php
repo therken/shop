@@ -24,7 +24,7 @@ if (mysqli_num_rows($result) == 1) {
     header("Location: ../profile.html");
 } else {
     // Если пользователь с таким email не найден, выводится сообщение об ошибке
-    echo '<script>alert("Неверный логин."); window.location.href="authorization.html";</script>';
+    echo '<script>alert("Неверный логин."); window.location.href="../authorization.html";</script>';
 }
 
 mysqli_stmt_close($stmt);
