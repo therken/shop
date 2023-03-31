@@ -21,6 +21,18 @@ $password = $_POST['psw'];
 // Использование md5 для хеширования пароля
 $hashed_password = md5($password);
 
+// Проверка наличия email в базе данных
+$check_email_query = mysqli_prepare($conn, "SELECT email FROM form WHERE email = ?");
+mysqli_stmt_bind_param($check_email_query, 's', $mail);
+mysqli_stmt_execute($check_email_query);
+mysqli_stmt_store_result($check_email_query);
+
+if (mysqli_stmt_num_rows($check_email_query) > 0) {
+    // Почта уже существует, необходимо обработать ошибку
+    echo '<script>alert("Данный email уже зарегистрирован."); window.location.href="../reg.html";</script>';
+    exit;
+}
+
 mysqli_stmt_bind_param($stmt, 'ss', $mail, $hashed_password);
 
 if (mysqli_stmt_execute($stmt)) {
