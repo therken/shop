@@ -6,155 +6,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<link rel="stylesheet" href="./style.css">
-<title>drunk shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>drunk shop</title>
 </head>
 <body>
-<div class="wrapper">
-<nav>
-<ul>
-<li>
-<a href="home.html">Меню</a>
-<ul class="dropdown-menu">
-<li><a href="adidas.html">Adidas</a></li>
-<li><a href="nike.html">Nike</a></li>
-</ul>
-</li>
-<li>
-<a href="home.html">Информационные страницы</a>
-<ul class="dropdown-menu">
-<li><a href="./infa/dostavka.html">Доставка</a></li>
-<li><a href="#">Контакты</a></li>
-<li><a href="#">Персонал</a></li>
-<li><a href="#">Отзывы</a></li>
-<li><a href="#">Вопрос/ответ</a></li>
-</ul>
-</li>
-<li><a href="./praktick/reg.html" class="h">Личный кабинет</a></li>
-<div class="cart-btn">
-<i id="cart" class="fas fa-shopping-cart"></i>
-<span class ="cart-quantity">0</span>
+  <div class="wrapper">
+    <nav>
+    <ul>
+    <li>
+    <a href="home.html">Меню</a>
+    <ul class="dropdown-menu">
+    <li><a href="adidas.html">Adidas</a></li>
+    <li><a href="nike.html">Nike</a></li>
+    </ul>
+    </li>
+    <li>
+      <a href="home.html">Информационные страницы</a>
+      <ul class="dropdown-menu">
+      <li><a href="./infa/dostavka.html">Доставка</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#">Персонал</a></li>
+      <li><a href="#">Отзывы</a></li>
+      <li><a href="#">Вопрос/ответ</a></li>
+      </ul>
+      </li>
+    <div class="cart-btn">
+      <i id="cart" class="fas fa-shopping-cart"></i>
+        <span class ="cart-quantity">0</span>
+    </div>
+    <div class="-btn">
+    <a href="/src/index.html"><i id="cart" class="fa fa-user" aria-hidden="true"></i></a>
 </div>
-<div class="cart-btn">
-<i id="cart" class="fa fa-user" aria-hidden="true"></i>
-</div>
-</ul>
-</nav>
-</div>
-<div class="wrapper">
-<!--  cart modal  -->
-<div class="cart-modal-overlay">
-<div class="cart-modal">
-<i id="close-btn" class="fas fa-times"></i>
-
-<div class="product-rows">
-</div>
-<div class="total">
-<h1 class="cart-total">TOTAL</h1>
-<span class="total-price">$0</span>
-<button class="purchase-btn">PURCHASE</button>
-</div>
-</div>
-</div>  
+    </ul>
+    </nav>
+    </div>
+  <div class="wrapper">
+  <!--  cart modal  -->
+  <div class="cart-modal-overlay">
+    <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+      
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+            <span class="total-price">$0</span>
+              <button class="purchase-btn">PURCHASE</button>
+        </div>
+      </div>
+    </div>  
 <!--   end of cart modal -->
 
 
 <!--  products  -->
 <div class="flex">
+    <div class="cart">
+        <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-1-mid-white-black-red.jpeg" alt="">
+      <span class="description">air jordan 1 mid white black-red</span>
+      <span class="product-price">$151</span>
+        <button class="add-to-cart">Добавить в корзину </button>
+        <button class="add-to-cart">Купить</button>
+      </div>  
 
-<div class="cart">
-<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-1-mid-white-black-red.jpeg" alt="">
-<span class="description">air jordan 1 mid white black-red</span>
-<span class="product-price">$151</span>
-<button class="add-to-cart">Добавить в корзину </button>
-<button class="add-to-cart">Купить</button>
-</div>  
+      <div class="cart">
+          <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-low-wmns-white-black.jpg" alt="">
+        <span class="description">Nike Dunk Low WMNS White Black</span>
+        <span class="product-price">$154</span>
+          <button class="add-to-cart">Добавить в корзину </button>
+          <button class="add-to-cart">Купить</button>
+        </div>  
 
-<div class="cart">
-<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-low-wmns-white-black.jpg" alt="">
-<span class="description">Nike Dunk Low WMNS White Black</span>
-<span class="product-price">$154</span>
-<button class="add-to-cart">Добавить в корзину </button>
-<button class="add-to-cart">Купить</button>
-</div>  
+        <div class="cart">
+            <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-wmns-washed-denim.jpeg" alt="">
+          <span class="description">Nike Dunk High WMNS Washed Denim</span>
+          <span class="product-price">$184</span>
+            <button class="add-to-cart">Добавить в корзину </button>
+            <button class="add-to-cart">Купить</button>
+          </div>  
 
-<div class="cart">
-<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-wmns-washed-denim.jpeg" alt="">
-<span class="description">Nike Dunk High WMNS Washed Denim</span>
-<span class="product-price">$184</span>
-<button class="add-to-cart">Добавить в корзину </button>
-<button class="add-to-cart">Купить</button>
-</div>  
+          <div class="cart">
+              <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-panda.jpeg" alt="">
+            <span class="description">Nike Dunk High Panda</span>
+            <span class="product-price">$151</span>
+              <button class="add-to-cart">Добавить в корзину </button>
+              <button class="add-to-cart">Купить</button>
+            </div>   
 
-<div class="cart">
-<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-panda.jpeg" alt="">
-<span class="description">Nike Dunk High Panda</span>
-<span class="product-price">$151</span>
-<button class="add-to-cart">Добавить в корзину </button>
-<button class="add-to-cart">Купить</button>
-</div>   
+            <div class="cart">
+                <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-force-1-low-sanddrift.jpeg" alt="">
+              <span class="description">Nike Air Force 1 Low Sanddrift</span>
+              <span class="product-price">$556</span>
+                <button class="add-to-cart">Добавить в корзину </button>
+                <button class="add-to-cart">Купить</button>
+              </div>    
+  </div>
+  <div class="flex">
 
-<div class="cart">
-<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-force-1-low-sanddrift.jpeg" alt="">
-<span class="description">Nike Air Force 1 Low Sanddrift</span>
-<span class="product-price">$556</span>
-<button class="add-to-cart">Добавить в корзину </button>
-<button class="add-to-cart">Купить</button>
-</div>    
-</div>
-<div class="flex">
+    <div class="cart">
+        <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-pureboost-go-core-black-grey-carbon.jpg" alt="">
+      <span class="description">adidas PureBoost Go Core Black Grey Carbon</span>
+      <span class="product-price">$99</span>
+        <button class="add-to-cart">Добавить в корзину </button>
+        <button class="add-to-cart">Купить</button>
+      </div>  
 
-<div class="cart">
-<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-pureboost-go-core-black-grey-carbon.jpg" alt="">
-<span class="description">adidas PureBoost Go Core Black Grey Carbon</span>
-<span class="product-price">$99</span>
-<button class="add-to-cart">Добавить в корзину </button>
-<button class="add-to-cart">Купить</button>
-</div>  
+      <div class="cart">
+        <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-ultra-boost-4-0-dna-cloud-white-core-black.jpg" alt="">
+      <span class="description">adidas Ultra Boost 4.0 DNA Cloud White Core Black</span>
+      <span class="product-price">$134</span>
+        <button class="add-to-cart">Добавить в корзину </button>
+        <button class="add-to-cart">Купить</button>
+      </div>   
 
-<div class="cart">
-<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-ultra-boost-4-0-dna-cloud-white-core-black.jpg" alt="">
-<span class="description">adidas Ultra Boost 4.0 DNA Cloud White Core Black</span>
-<span class="product-price">$134</span>
-<button class="add-to-cart">Добавить в корзину </button>
-<button class="add-to-cart">Купить</button>
-</div>   
+        <div class="cart">
+            <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-dame-6-pride.jpg" alt="">
+          <span class="description">adidas Dame 6 Pride</span>
+          <span class="product-price">$110</span>
+            <button class="add-to-cart">Добавить в корзину </button>
+            <button class="add-to-cart">Купить</button>
+          </div>  
 
-<div class="cart">
-<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-dame-6-pride.jpg" alt="">
-<span class="description">adidas Dame 6 Pride</span>
-<span class="product-price">$110</span>
-<button class="add-to-cart">Добавить в корзину </button>
-<button class="add-to-cart">Купить</button>
-</div>  
+          <div class="cart">
+              <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-altaswim-gs-core-black-footwear-white.jpg" alt="">
+            <span class="description">adidas Altaswim GS Core Black Footwear White</span>
+            <span class="product-price">$75</span>
+              <button class="add-to-cart">Добавить в корзину </button>
+              <button class="add-to-cart">Купить</button>
+            </div>   
 
-<div class="cart">
-<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-altaswim-gs-core-black-footwear-white.jpg" alt="">
-<span class="description">adidas Altaswim GS Core Black Footwear White</span>
-<span class="product-price">$75</span>
-<button class="add-to-cart">Добавить в корзину </button>
-<button class="add-to-cart">Купить</button>
-</div>   
-
-<div class="cart">
-<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-ultra-boost-4-0-dna-core-black-active-red.jpg" alt="">
-<span class="description">adidas Ultra Boost 4.0 DNA Core Black Active Red</span>
-<span class="product-price">$556</span>
-<button class="add-to-cart">Добавить в корзину </button>
-<button class="add-to-cart">Купить</button>
-</div>    
-</div>
+            <div class="cart">
+                <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-ultra-boost-4-0-dna-core-black-active-red.jpg" alt="">
+              <span class="description">adidas Ultra Boost 4.0 DNA Core Black Active Red</span>
+              <span class="product-price">$556</span>
+                <button class="add-to-cart">Добавить в корзину </button>
+                <button class="add-to-cart">Купить</button>
+              </div>    
+  </div>
 <!--  end of products  -->
-
+  
 
 </div> 
 </body>
 </html>
 <!-- partial -->
-<script  src="./script.js"></script>
+  <script  src="./script.js"></script>
 
 </body>
 </html>
