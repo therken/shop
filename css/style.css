@@ -6,7 +6,7 @@ body {
 }
 .wrapper {
   text-align: center;
-  background-image: linear-gradient(#ccc, #ccc);
+  background: #f0f0f0;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -48,7 +48,11 @@ nav {
     display: none;
     z-index: 2;
   }
-  
+  nav ul ul li {
+  border-top: 1px solid #ccc;
+  margin-top: 5px;
+  padding-top: 5px;
+}
   nav ul li:hover > ul {
     display: block;
     position: absolute;
@@ -137,9 +141,9 @@ a{
   font-weight: bolder;;
 }
 .cart-modal-overlay {
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 100%;
+  height:50%;
   z-index: 2;
   transform: translateX(-200%);
   transition: .5s ease-out;
@@ -149,9 +153,10 @@ a{
 .cart-modal {
   height: 100%;
   width: 50%;
-  background-image: linear-gradient(#ccc, #fff);
+  background-color: #00000083;
   overflow: scroll;
   overflow-x: hidden;
+  margin-left: 12.5%;
 }
 
 #close-btn {
@@ -176,9 +181,10 @@ a{
 
 
 .total-price {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 1rem;
   display: block;
+  font-size: 1rem;
 }
 
 .purchase-btn {
@@ -194,14 +200,18 @@ a{
   display: flex;
   align-items: center;
 }
-
+.cart-total {
+  color: white;
+  font-size: 1rem;
+}
 .cart-image {
-  width: 10rem;
+  width: 7rem;
   margin: 2em;
 }
 .product-quantity {
+  height: 1.4rem;
   width: 4rem;
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-left: 3rem;
 }
 
