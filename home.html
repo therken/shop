@@ -9,10 +9,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./style.css">
   <title>drunk shop</title>
 </head>
 <body>
+  <div class="wrapper">
+    <nav>
+    <ul>
+    <li>
+    <a href="home.html">Меню</a>
+    <ul class="dropdown-menu">
+    <li><a href="adidas.html">Adidas</a></li>
+    <li><a href="nike.html">Nike</a></li>
+    </ul>
+    </li>
+    <li>
+      <a href="home.html">Информационные страницы</a>
+      <ul class="dropdown-menu">
+      <li><a href="./infa/dostavka.html">Доставка</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#">Персонал</a></li>
+      <li><a href="#">Отзывы</a></li>
+      <li><a href="#">Вопрос/ответ</a></li>
+      </ul>
+      </li>
+    <li><a href="./praktick/reg.html" class="h">Личный кабинет</a></li>
+    <div class="cart-btn">
+      <i id="cart" class="fas fa-shopping-cart"></i>
+        <span class ="cart-quantity">0</span>
+    </div>
+    </ul>
+    
+    </nav>
+    </div>
   <div class="wrapper">
   <!--  cart modal  -->
   <div class="cart-modal-overlay">
@@ -29,10 +58,6 @@
       </div>
     </div>  
 <!--   end of cart modal -->
-  <div class="cart-btn">
-    <i id="cart" class="fas fa-shopping-cart"></i>
-      <span class ="cart-quantity">0</span>
-  </div>
 
 
 <!--  products  -->
