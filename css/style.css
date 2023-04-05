@@ -70,9 +70,6 @@
    display: inline-block;
 }
 
-.products-preview .preview img{
-   height: 30rem;
-}
 
 .products-preview .preview .fa-times{
    position: absolute;
