@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- custom js file link  -->
+   <script src="js/script.js" defer></script>
+
+</head>
+<body>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<script src="https://unpkg.com/nouislider@10.0.0/distribute/nouislider.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/nouislider@10.0.0/distribute/nouislider.min.css">
+   <div class="wrapper">
+      <nav>
+      <ul>
+      <li><a href="home.html" class="h">Главная</a></li>
+      <div class="cart-btn">
+      <i id="cart" class="fas fa-shopping-cart"></i>
+      <span class ="cart-quantity">0</span>
+      </div>
+      <div class="-btn">
+      <a href="./praktick/reg.html"><i id="cart" class="fa fa-user" aria-hidden="true"></i></a>
+      </div>
+      </ul>
+      
+      </nav>
+      </div>
+      <div class="wrapper">
+<div class="container">
+   <div class="cart-modal-overlay">
+      <div class="cart-modal">
+      <i id="close-btn" class="fas fa-times"></i>
+      
+      <div class="product-rows">
+      </div>
+      <div class="total">
+      <h1 class="cart-total">TOTAL</h1>
+      <span class="total-price">$0</span>
+      <button class="purchase-btn">PURCHASE</button>
+      </div>
+      </div>
+      </div>  
+   <div class="products-container">
+<div class="flex">
+      <div class="product" data-name="p-1">
+         <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_disney-x-adidas-wmns-nmd-r1-bambi.jpg" alt="">
+         <span class="description">Disney x adidas WMNS NMD R1 Bambi</span>
+         <span class="product-price">206$</span>
+      </div>
+      <div class="product" data-name="p-2">
+         <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-forum-low-footwear-white-core-black-2.jpg" alt="">
+         <span class="description">adidas Forum Low Footwear White Core Black</span>
+         <span class="product-price">104$</span>
+      </div>
+      <div class="product" data-name="p-3">
+         <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-ozweego-cloud-white-core-black.jpg" alt="">
+         <span class="description">adidas Ozweego Cloud White Core Black</span>
+         <span class="product-price">130$</span>
+      </div>
+      <div class="product" data-name="p-4">
+         <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-continental-80-cloud-white-scarlet-collegiate-navy.jpg" alt="">
+         <span class="description">adidas Continental 80 Cloud White Scarlet Collegiate Navy</span>
+         <span class="product-price">204$</span>
+      </div>
+      <div class="product" data-name="p-5">
+         <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-mutombo-white-blue.jpg" alt="">
+         <span class="description">Adidas Mutombo - White/Blue</span>
+         <span class="product-price">80$</span>
+      </div>
+ </div>
+ 
+</div>
+</div>
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_disney-x-adidas-wmns-nmd-r1-bambi.jpg" alt="">
+      <span class="description">Disney x adidas WMNS NMD R1 Bambi</span>
+      <span class="product-price">206$</span>
+      <button class="add-to-cart">Добавить в корзину </button>
+      <button class="add-to-cart">Купить</button>
+   </div>
+
+  
+   </div>
+
+</div>
+</body>
+</html>
