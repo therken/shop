@@ -1,3 +1,47 @@
+var nonLinearSlider = document.getElementById('nonlinear');
+
+noUiSlider.create(nonLinearSlider, {
+	connect: true,
+	behaviour: 'tap',
+	start: [ 50, 600 ],
+	range: {
+		min: 50,
+		max: 600
+	}
+});
+
+var nodes = [
+	document.getElementById('lower-value'), // 0
+	document.getElementById('upper-value')  // 1
+];
+
+// Display the slider value and how far the handle moved
+// from the left edge of the slider.
+nonLinearSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+	nodes[handle].innerHTML = values[handle];  
+  verifyBoxes(values)
+});
+
+
+function verifyBoxes(v) {
+  var boxesArr = [].slice.call(document.querySelectorAll(".box")).map(function(item){
+      return item
+  });
+
+  for (var i =0; i < boxesArr.length; i++) {
+    var box = boxesArr[i]
+    var price = box.querySelector('.product-price').textContent
+    var priceNumb = parseInt(price)
+    var vMin = v[0]
+    var vMax = v[1]
+    
+    if (priceNumb > vMax || priceNumb < vMin  ) {
+        box.classList.add('-close') 
+     } else {
+       box.classList.remove('-close')
+     }
+  }
+}
 // open cart modal
 const cart = document.querySelector('#cart');
 const cartModalOverlay = document.querySelector('.cart-modal-overlay');
@@ -142,3 +186,6 @@ function purchaseBtnClicked () {
 // end of purchase items
 
 //alert user if cart is empty
+const dropdown = document.getElementsByClassName('wrapper-dropdown');
+ 
+dropdown[0].onclick = () => { dropdown[0].classList.toggle('active') };
