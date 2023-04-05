@@ -1,1 +1,1 @@
-my magazin
+nash magazin
