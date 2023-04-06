@@ -173,7 +173,7 @@ body {
  .cart-btn {
    display: flex;
    justify-content: flex-end;
-   margin-left: 750px;
+   margin-left: 1000px;
  }
  .cart-quantity {
    color: rgb(0, 0, 0);
@@ -203,7 +203,7 @@ body {
  }
  .description {
    font-size: 1rem;
-   text-align: left;
+   text-align: center;
    display: block;
  }
  .product-price {
