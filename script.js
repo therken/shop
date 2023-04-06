@@ -60,13 +60,13 @@ function addToCartClicked (event) {
   button = event.target;
   var cartItem = button.parentElement;
   var price = cartItem.getElementsByClassName('product-price')[0].innerText;
-  
+  var description =cartItem.getElementsByClassName('description')[0].innerText;
   var imageSrc = cartItem.getElementsByClassName('product-image')[0].src;
-  addItemToCart (price, imageSrc);
+  addItemToCart (price, imageSrc,description);
   updateCartPrice()
 }
 
-function addItemToCart (price, imageSrc) {
+function addItemToCart (price, imageSrc,description) {
   var productRow = document.createElement('div');
   productRow.classList.add('product-row');
   var productRows = document.getElementsByClassName('product-rows')[0];
@@ -82,6 +82,7 @@ function addItemToCart (price, imageSrc) {
   var cartRowItems = `
   <div class="product-row">
         <img class="cart-image" src="${imageSrc}" alt="">
+        <span class="description">${description}</span>
         <span class ="cart-price">${price}</span>
         <input class="product-quantity" type="number" value="1">
         <button class="remove-btn">Remove</button>
