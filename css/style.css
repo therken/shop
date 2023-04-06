@@ -251,12 +251,14 @@ body {
    width: 95%;
    margin-left: auto;
    margin-right: auto;
-   
+   color: #fff;
+   font-size: 1.5rem;
  }
  
  .total {
    text-align: center;
    margin: 1em 0 2em 0;
+   font-size: 1.5rem;
  /*   display: none; */
  }
  
@@ -269,7 +271,7 @@ body {
  }
  
  .purchase-btn {
-   font-size: 1rem;
+   font-size: 0.8rem;
    background-color: #d31cc4;
    color: white;
    border-radius: 20px;
