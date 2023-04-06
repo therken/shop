@@ -101,7 +101,7 @@ input[type="password"]:focus {
 }
 
 button {
-  margin: 10px auto;
+  margin: 10px 10px;
 }
 button {
   border: none;
