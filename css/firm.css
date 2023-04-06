@@ -70,9 +70,6 @@
    display: inline-block;
 }
 
-.products-preview .preview img{
-   height: 30rem;
-}
 
 .products-preview .preview .fa-times{
    position: absolute;
@@ -200,7 +197,7 @@ body {
  
  .product-image{
    display: inline-block;
-   max-width: 150px;
+   max-width: 170px;
    max-height: 150px;
    object-fit: cover;
  }
