@@ -71,8 +71,8 @@ nav ul ul ul {
 }
 .wrapper {
   text-align: center;
-  background-image: linear-gradient(#ccc, #b9b9b9);
-  max-width: 1000px;
+  background: #ffffff;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 1px;
