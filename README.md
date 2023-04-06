@@ -1,1 +1,1 @@
-nash magazin
+shopper
