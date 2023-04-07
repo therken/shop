@@ -1,3 +1,20 @@
+const searchInput = document.querySelector("#search-input");
+const cardsContainer = document.querySelector(".container");
+
+searchInput.addEventListener("input", function () {
+  const searchValue = this.value.toLowerCase();
+
+  cardsContainer.querySelectorAll(".product").forEach(function (card) {
+    const cardTitle = card.querySelector(".description").textContent.toLowerCase();
+
+    if (cardTitle.includes(searchValue)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+
 let preveiwContainer = document.querySelector('.products-preview');
 let previewBox = preveiwContainer.querySelectorAll('.preview');
 
@@ -161,4 +178,48 @@ function purchaseBtnClicked () {
    
  }
   updateCartPrice()
+}
+var nonLinearSlider = document.getElementById('nonlinear');
+
+noUiSlider.create(nonLinearSlider, {
+	connect: true,
+	behaviour: 'tap',
+	start: [ 10, 600 ],
+	range: {
+		min: 10,
+		max: 600
+	}
+});
+
+var nodes = [
+	document.getElementById('lower-value'), // 0
+	document.getElementById('upper-value')  // 1
+];
+
+// Display the slider value and how far the handle moved
+// from the left edge of the slider.
+nonLinearSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+	nodes[handle].innerHTML = values[handle];  
+  verifyBoxes(values)
+});
+
+
+function verifyBoxes(v) {
+  var boxesArr = [].slice.call(document.querySelectorAll(".product")).map(function(item){
+      return item
+  });
+
+  for (var i =0; i < boxesArr.length; i++) {
+    var box = boxesArr[i]
+    var price = box.querySelector('.product-price').textContent
+    var priceNumb = parseInt(price)
+    var vMin = v[0]
+    var vMax = v[1]
+    
+    if (priceNumb > vMax || priceNumb < vMin  ) {
+        box.classList.add('-close') 
+     } else {
+       box.classList.remove('-close')
+     }
+  }
 }
