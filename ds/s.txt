@@ -1,0 +1,7 @@
+    1.https://fonts.googleapis.com/css?family=Lato|Raleway: Ссылка на шрифты Lato и Raleway с сервиса Google Fonts.
+    2.https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css: Ссылка на таблицу стилей Font Awesome, которая содержит иконочный шрифт с более чем 1500 значками.
+    3.https://unpkg.com/nouislider@10.0.0/distribute/nouislider.min.js: Ссылка на скрипт nouislider для создания красивых и кастомизируемых слайдеров.
+    4.https://unpkg.com/nouislider@10.0.0/distribute/nouislider.min.css: Ссылка на таблицу стилей nouislider.
+    5.https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css: Ссылка на таблицу стилей Font Awesome версии 4.7.0, которая также содержит иконочный шрифт.
+    6.https://code.jquery.com/jquery-3.3.1.js: Ссылка на скрипт jQuery - библиотеку JavaScript, которая упрощает взаимодействие с элементами HTML страницы и обеспечивает удобный API для работы с AJAX и анимациями.
+    ./css/style.css: Ссылка на локальный файл таблицы стилей, расположенный в папке css относительно текущей страницы.
