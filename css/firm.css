@@ -299,7 +299,7 @@ nav .submenu-container a:nth-child(8) {
  }
  
  .container .products-container .product:hover{
-	outline: .1rem solid #cc00ff;
+	outline: .1rem solid #000000;
 	border-radius: 10%;
 	outline-offset: 0;
  }
