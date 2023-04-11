@@ -1,1 +1,1 @@
-nash shopper
+shmoper
