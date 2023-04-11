@@ -1,6 +1,5 @@
 
 .wrapper {
-    text-align: center;
     background-image: #000000;
     max-width: 1000px;
     margin-left: auto;
@@ -11,6 +10,7 @@
     margin: 300px auto;
     background-color: #fff;
     padding: 20px;
+    text-align: center;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
@@ -58,4 +58,17 @@
      text-decoration: none;
   }
 
-  
+  .header {
+    border-bottom: 1px solid #acacac;
+margin: 10px 0 20px;
+padding-bottom: 9px;
+  }
+
+  h3{
+    font-size: 20px;
+    margin-bottom: 10px
+  }
+
+  p{
+    margin-bottom: 10px
+  }
