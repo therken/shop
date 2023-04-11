@@ -12,6 +12,7 @@ text-transform: capitalize;
 body {
 margin: 0;
 font-size: medium;
+font-family: 'Raleway', 'Lato', sans-serif;
 }
 
 nav {
@@ -100,11 +101,11 @@ animation-fill-mode: forwards;
 
 @keyframes curtain {
 0% {
-	transform: translate(-20px, -20px);
+transform: translate(-20px, -20px);
 } 
 100% {
-	transform: translate(0, 0);
-	opacity: 1;
+transform: translate(0, 0);
+opacity: 1;
 }
 }
 
@@ -469,9 +470,9 @@ margin-left: 3rem;
 }
 .size {
 height: 1.4rem;
-font-size: 1.4rem;
+font-size: 1.0rem;
 margin: 2px;
-width: 20%;
+width: 10%;
 }
 
 .remove-btn {
