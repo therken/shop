@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Lemonada:wght@600&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+@import url('//db.onlinewebfonts.com/c/feb5fbe240f4a3e4aee19523b6c905b4?family=Farrington-7B-Qiqi');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+* {
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+  }
+  
+  body {
+    font-size: medium;
+    font-family: 'Raleway', 'Lato', sans-serif;
+    text-align: center;
+  }
+
+.container {
+    margin-top: 50px;
+    max-width: 400px;
+    height: 400px;
+    padding: 10px;
+    margin: 300px auto;
+    background-color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: black;
+    overflow: hidden;
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+    display: inline flow-root list-item;
+
+}
+
+
+
+.card {
+    margin-top: 30px;
+    transition: 0.5s;
+    width: 380px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: black;
+    background-image: url('./assets/visa.png');
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+}
+
+.card-position {
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    position: absolute;
+    right: 0px;
+    top: 130px;
+}
+
+.expirition {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-number {
+    position: absolute;
+    left: 20px;
+    bottom: -130px;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    font-family: 'Russo One', sans-serif;
+}
+
+.card-name {
+    display: flex;
+    position: absolute;
+    max-width: 120px;
+    left: 20px;
+    bottom: -190px;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    font-family: "Farrington-7B-Qiqi";
+    overflow: hidden;
+}
+
+.card-surname {
+    display: flex;
+    position: absolute;
+    max-width: 20px;
+    left: 120px;
+    bottom: -190px;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    font-family: "Farrington-7B-Qiqi";
+    overflow: hidden;
+}
+
+.card-mm {
+    display: flex;
+    position: absolute;
+    max-width: 20px;
+    left: 190px;
+    bottom: -185px;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    font-family: 'Russo One', sans-serif;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.card-yy {
+    display: flex;
+    position: absolute;
+    width: 40px;
+    left: 215px;
+    bottom: -185px;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    font-family: 'Russo One', sans-serif;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.sim {
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    left: -10px;
+    bottom: -90px;
+}
+
+.first-div input {
+    background-color: #f3f3f3;
+    padding: 0px 10px;
+    margin-top: 6px;
+    min-width: 10em;
+    height: 37px;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    border-radius: 4px;
+    transition: all 250ms ease-in-out;
+}
+
+.second-div input {
+    background-color: #f3f3f3;
+    margin-top: 6px;
+    padding: 0px 10px;
+    min-width: 26.5em;
+    height: 37px;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    border-radius: 4px;
+    transition: all 250ms ease-in-out;
+}
+
+.third-div {
+    background-color: #f3f3f3;
+    display: flex;
+    margin-top: 6px;
+    flex-direction: row;
+    padding-left: 10px;
+    align-items: center;
+    width: 16em;
+    height: 37px;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    border-radius: 4px;
+    transition: all 250ms ease-in-out;
+    color: grey;
+    font-size: 14px;
+}
+
+.fourth-div {
+    background-color: #f3f3f3;
+    display: flex;
+    margin-top: 6px;
+    margin-left: 4px;
+    flex-direction: row;
+    padding-left: 10px;
+    align-items: center;
+    width: 9em;
+    height: 37px;
+    font-family: "Open Sans", sans-serif;
+    border: 0;
+    border-radius: 4px;
+    transition: all 250ms ease-in-out;
+    color: grey;
+    font-size: 14px;
+}
+
+.expirition {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.select-item {
+    background-color: #f3f3f3;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(255, 255, 255, 0.1) transparent;
+}
+
+.cvv {
+    width: 50px;
+    background-color: #f3f3f3;
+    border: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+.cvv:focus {
+    outline: none;
+}
+
+.select-item:focus {
+    outline: none;
+}
+.dost{
+    background-color: #f3f3f3;
+padding: 0px 10px;
+margin-top: 6px;
+width: 100%;
+height: 37px;
+font-family: "Open Sans", sans-serif;
+border: 0;
+border-radius: 4px;
+transition: all 250ms ease-in-out;
+}
+.send{
+    font-size: 1rem;
+	background-color: #000000;
+	color: white;
+	border-radius: 20px;
+	padding: 0.6em 1em;
+	margin: 2% auto;
+	transition: .5s ease;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: bolder;;
+}
+.back{
+    font-size: 1rem;
+	background-color: #000000;
+	color: white;
+	border-radius: 20px;
+	padding: 0.6em 1em;
+	transition: .5s ease;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: bolder;;
+}
+  nav {
+    transition: all .3s ease;
+    background: #000000;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+  }
+  
+  nav a {
+    padding: 15px;
+  }
+  .menu2{
+     position: relative;
+     margin: 0 auto;
+     overflow: hidden;
+  }
+  .menu2 ul li{
+     list-style: none;
+  }
+  .menu2 ul li,
+  .menu2 ul li a{
+     color: #fff;
+     line-height: 44px;
+     text-decoration: none;
+  }

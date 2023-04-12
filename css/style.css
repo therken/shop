@@ -324,7 +324,7 @@ nav .submenu-container a:nth-child(8) {
 	background: #fff;
 	position: relative;
 	margin:2rem;
-	width: 40rem;
+	width: auto;
  }
  
  .products-preview .preview.active{

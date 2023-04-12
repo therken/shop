@@ -212,7 +212,7 @@ nav a {
 	background: #fff;
 	position: relative;
 	margin:2rem;
-	width: 40rem;
+	width: auto;
  }
  
  .products-preview .preview.active{
