@@ -187,15 +187,15 @@ const closeCartModal = document.querySelector('.cart-modal');
 purchaseBtn.addEventListener('click', purchaseBtnClicked)
 
 function purchaseBtnClicked () {
-alert ('Thank you for your purchase');
-cartModalOverlay.style.transform= 'translateX(-100%)'
-var cartItems = document.getElementsByClassName('product-rows')[0]
-while (cartItems.hasChildNodes()) {
-cartItems.removeChild(cartItems.firstChild)
+  window.location.href = './card/card.html';
+  cartModalOverlay.style.transform= 'translateX(-100%)';
+  var cartItems = document.getElementsByClassName('product-rows')[0];
+  while (cartItems.hasChildNodes()) {
+    cartItems.removeChild(cartItems.firstChild);
+  }
+  updateCartPrice();
+}
 
-}
-updateCartPrice()
-}
 var nonLinearSlider = document.getElementById('nonlinear');
 
 noUiSlider.create(nonLinearSlider, {
