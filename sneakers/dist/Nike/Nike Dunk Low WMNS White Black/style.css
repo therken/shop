@@ -28,7 +28,7 @@ h3 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #4e411b;
+  background: #3b3b3b;
 }
 
 .window {
@@ -88,9 +88,9 @@ h3 {
 
 .highlight-window {
   height: 505px;
-  width: 750px;
-  background: #ccc;
-  background: url('https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-force-1-low-sanddrift.jpeg');
+  width: 660px;
+  background: #252020;
+  background: url('https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-low-wmns-white-black.jpg');
   background-size: cover;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
   z-index: 10;
@@ -121,7 +121,7 @@ h3 {
   background-position:center top;
 }
 .background-element {
-  background: rgb(3, 7, 14);
+  background: #b1b2b8;
   position: absolute;
   width: 120%;
   height: 400px;
