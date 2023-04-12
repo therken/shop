@@ -240,3 +240,6 @@ box.classList.remove('-close')
 }
 }
 }
+function goBack() {
+  window.history.back();
+}

@@ -284,7 +284,7 @@ nav a {
 	outline: none;
 	border: none;
 	cursor: pointer;
-	font-weight: bolder;;
+	font-weight: bolder;
   }
   .cart-modal-overlay {
 	position: absolute;
@@ -412,3 +412,14 @@ nav a {
 	 -webkit-transition:background 450ms;
 	 transition:background 450ms
 	}
+.back{
+	font-size: 1rem;
+	background-color: #000000;
+	color: white;
+
+	transition: .5s ease;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: bolder;
+}
