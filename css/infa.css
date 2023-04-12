@@ -72,3 +72,14 @@ padding-bottom: 9px;
   p{
     margin-bottom: 10px
   }
+.back{
+  	font-size: 1rem;
+	background-color: #000000;
+	color: white;
+
+	transition: .5s ease;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: bolder;
+}
