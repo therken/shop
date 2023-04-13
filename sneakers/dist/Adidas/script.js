@@ -9,6 +9,7 @@ document.getElementById('range-picker').addEventListener('click', function(e) {
   e.target.classList.add('active');
 })
 
+
 function goBack() {
   window.history.back();
 }
