@@ -26,3 +26,6 @@ document.getElementById('color-b').addEventListener('click', function() {
   document.getElementById('color-name').innerHTML = "BLUES / 2V5";
   document.getElementById('color-name').style.color = '#457'
 })
+function goBack() {
+  window.history.back();
+}
