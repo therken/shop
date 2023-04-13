@@ -464,9 +464,9 @@ nav .submenu-container a:nth-child(8) {
   }
   .product-quantity {
 	height: 1.4rem;
-	width: 4rem;
-	font-size: 1.4rem;
-	margin-left: 3rem;
+	font-size: 1.0rem;
+	margin: 2px;
+	width: 10%;
   }
   .size {
 	height: 1.4rem;
