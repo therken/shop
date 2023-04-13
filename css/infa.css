@@ -5,6 +5,13 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .personal {
+    background-image: #000000;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
   .f {
     max-width: 500px;
     margin: 300px auto;
@@ -82,4 +89,16 @@ padding-bottom: 9px;
 	border: none;
 	cursor: pointer;
 	font-weight: bolder;
+}
+img{
+  width: 250px;
+  height: 250px;
+  display: flex;
+}
+.chel {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  margin: 10px;
 }
