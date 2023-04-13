@@ -195,7 +195,6 @@ function purchaseBtnClicked () {
   }
   updateCartPrice();
 }
-
 var nonLinearSlider = document.getElementById('nonlinear');
 
 noUiSlider.create(nonLinearSlider, {
