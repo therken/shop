@@ -7,7 +7,46 @@ html {
   padding: 0;
   overflow-x:hidden;
 }
+nav {
+  transition: all .3s ease;
+  background: #00000000;
+  
+}
 
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+
+nav a {
+  padding: 15px;
+}
+.menu2{
+   position: relative;
+   margin: 0 auto;
+   overflow: hidden;
+   z-index: 2;
+}
+.menu2 ul li{
+   list-style: none;
+}
+.menu2 ul li,
+.menu2 ul li a{
+   color: #fff;
+   line-height: 44px;
+   text-decoration: none;
+}
+.back{
+  font-size: 1rem;
+	background-color: #00000000;
+	color: white;
+	transition: .5s ease;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: bolder;
+}
 h1,
 h2,
 h3 {
