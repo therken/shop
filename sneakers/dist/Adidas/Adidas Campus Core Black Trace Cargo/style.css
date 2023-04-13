@@ -7,7 +7,47 @@ html {
   padding: 0;
   overflow-x:hidden;
 }
+nav {
+  transition: all .3s ease;
+  background: #00000000;
+  
+}
 
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+
+nav a {
+  padding: 15px;
+}
+.menu2{
+   position: relative;
+   margin: 0 auto;
+   overflow: hidden;
+   z-index: 2;
+}
+.menu2 ul li{
+   list-style: none;
+}
+.menu2 ul li,
+.menu2 ul li a{
+   color: #fff;
+   line-height: 44px;
+   text-decoration: none;
+}
+.back{
+  font-size: 1rem;
+	background-color: #00000000;
+	color: white;
+
+	transition: .5s ease;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: bolder;
+}
 h1,
 h2,
 h3 {
@@ -42,6 +82,7 @@ h3 {
   min-height: 450px;
   position: relative;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 .options {
   display:-webkit-box;
@@ -94,7 +135,7 @@ h3 {
   background: url('https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-campus-core-black-trace-cargo.jpg');
   background-size: cover;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  z-index: 1;
   position:relative;
   background-position:center top;
 }
@@ -119,10 +160,11 @@ h3 {
           transform: rotate(-5deg);
   -webkit-transition:background .6s ease;
           transition:background .6s ease;
+          z-index: 1;
 }
 .color.overlay {
   position:absolute;
-  z-index:10;
+  z-index:1;
   background:transparent;
   top:-1px;
   left:-1px;
@@ -303,7 +345,6 @@ button:hover {
   border-left:1px solid #333;
 }
 
-
 @media (max-width: 850px) {
   body {
     background:#fff;
@@ -345,6 +386,7 @@ button:hover {
     height:auto;
     position:absolute;
     box-shadow:none;
+    z-index: 2;
   }
   .price {
     margin-bottom:15px;
