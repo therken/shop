@@ -48,6 +48,18 @@
     </div>
     </div>
     </div>  
+    <div class="modal hidden">
+        <h1>Быстрый заказ</h1>
+        <h3>Оплата при получении</h3>
+        <button class="close-modal">&times;</button>
+        <input type="text" class="dost" placeholder="Имя">
+        <input type="text" class="dost" placeholder="Фамилия">        
+        <input type="text" class="dost" placeholder="Страна">
+        <input type="text" class="dost" placeholder="Город">
+        <input type="text" class="dost" placeholder="Адрес">
+        <button class="add-to-cart">Отправить</button>
+      </div>
+      <div class="overlay hidden"></div>
     <div class="filter-range">
     <div id="nonlinear" class="noUi-target noUi-ltr noUi-horizontal"></div>
     <span class="example-val" id="lower-value"></span>
@@ -146,7 +158,7 @@
     <span class="description">Air Jordan 1 Mid White Black Red</span>
     <span class="product-price">100$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Air Jordan 1 Mid White Black Red/Air Jordan 1 Mid White Black Red.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-2">
@@ -155,7 +167,7 @@
     <span class="description">Nike Dunk High WMNS Washed Denim</span>
     <span class="product-price">230$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Dunk High WMNS Washed Dinim/Nike Dunk High WMNS Washed Dinim.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-3">
@@ -164,7 +176,7 @@
     <span class="description">Nike Dunk High Panda</span>
     <span class="product-price">179$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Dunk High Panda/Nike Dunk High Panda.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-4">
@@ -173,7 +185,7 @@
     <span class="description">Nike Air Force 1 Low Sanddrift</span>
     <span class="product-price">170$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Air Force 1 Low Sanddrift/Nike Air Force 1 Low Sanddrift.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-5">
@@ -182,7 +194,7 @@
     <span class="description">Nike Dunk Low WMNS White Black</span>
     <span class="product-price">70$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Dunk Low WMNS White Black/Nike Dunk Low WMNS White Black.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-6">
@@ -191,7 +203,7 @@
     <span class="description">Air Jordan 5 Aqua</span>
     <span class="product-price">200$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Air jordan 5 Aqua/Air jordan 5 Aqua.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-7">
@@ -200,7 +212,7 @@
     <span class="description">Nike WMNS Court Legacy Lift White Black</span>
     <span class="product-price">80$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike WMNS Court Legacy Lift White Black/Nike WMNS Court Legacy Lift White Black.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-8">
@@ -209,7 +221,7 @@
     <span class="description">Nike Air Force 1 Low White Grey</span>
     <span class="product-price">130$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Air Force 1 Low White Grey/Air Force 1 Low White Grey.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-9">
@@ -218,7 +230,7 @@
     <span class="description">Air Jordan 1 Low Concord</span>
     <span class="product-price">120$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Air Jordan 1 Low Concord/Air Jordan 1 Low Concord.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-10">
@@ -227,7 +239,7 @@
     <span class="description">Air Jordan 11 Low Cement Grey</span>
     <span class="product-price">190$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Air Jordan 11 Low Cement Grey/Air Jordan 11 Low Cement Grey.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-11">
@@ -236,7 +248,7 @@
     <span class="description">Nike Air Foamposite One Dream A World Black</span>
     <span class="product-price">250$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Air Foamposite One Dream A World Black/Nike Air Foamposite One Dream A World Black.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-12">
@@ -245,7 +257,7 @@
     <span class="description">Nike Dunk Low Rainbow Trout</span>
     <span class="product-price">190$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Dunk Low Rainbow Trout/Nike Dunk Low Rainbow Trout.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-13">
@@ -254,7 +266,7 @@
     <span class="description">Air Jordan 4 Black Cat 2020</span>
     <span class="product-price">190$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Air Jordan 4 Black Cat 2020/Nike Air-Jordan 4 Black Cat 2020.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-14">
@@ -263,7 +275,7 @@
     <span class="description">Air Jordan 13 Retro Cement Grey</span>
     <span class="product-price">185$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Air Jordan 13 Retro Cement Grey/Nike Air-Jordan 13 Retro Cement Grey.html">hahah</a></button>
     </div>
     <div class="preview" data-target="p-15">
@@ -272,7 +284,7 @@
     <span class="description">Air Jordan 1 Mid Space Jam</span>
     <span class="product-price">135$</span>
     <button class="add-to-cart">Добавить в корзину </button>
-    <button class="add-to-cart">Купить</button>
+    <button class="show-modal">Купить</button>
     <button  ><a class="add-to-cart" href="./sneakers/dist/Nike/Nike Air Jordan 1 Mid Space Jam/Nike Air-Jordan 1 Mid Space Jam.html">hahah</a></button>
     </div>
     </div>
