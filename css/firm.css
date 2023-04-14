@@ -416,7 +416,7 @@ nav a {
 	font-size: 1rem;
 	background-color: #000000;
 	color: white;
-
+margin: 10px;
 	transition: .5s ease;
 	outline: none;
 	border: none;
