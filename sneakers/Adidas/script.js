@@ -13,3 +13,8 @@ document.getElementById('range-picker').addEventListener('click', function(e) {
 function goBack() {
   window.history.back();
 }
+const buyButton = document.querySelector('.buy');
+
+buyButton.addEventListener('click', function() {
+  window.location.href = '../card/card.html';
+});
