@@ -16,5 +16,5 @@ function goBack() {
 const buyButton = document.querySelector('.buy');
 
 buyButton.addEventListener('click', function() {
-  window.location.href = '../card/card.html';
+  window.location.href = '../../../card/card.html';
 });
