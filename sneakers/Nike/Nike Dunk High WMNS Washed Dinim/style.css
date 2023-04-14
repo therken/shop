@@ -126,8 +126,8 @@ h3 {
 }
 
 .highlight-window {
-  height: 505px;
-  width: 750px;
+  height: 545px;
+  width: 745px;
   background: #ccc;
   background: url('https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-wmns-washed-denim.jpeg');
   background-size: cover;
@@ -198,7 +198,7 @@ a:hover {
   text-decoration:underline;
   color:#666;
 }
-button {
+.buy {
   background:#333;
   border:none;
   font-weight:400;
@@ -213,7 +213,7 @@ button {
   -webkit-transition:all .3s ease;
           transition:all .3s ease;
 }
-button:hover {
+.buy:hover {
   background:#555;
   -webkit-transition:all .3s ease;
           transition:all .3s ease;
