@@ -14,3 +14,6 @@ $('.list_add-review-cta').click(function(){
 document.getElementById("rewiew_message").value = "";
  $('#review-userimage').val('');
   }
+  function goBack() {
+    window.history.back();
+  }
