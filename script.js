@@ -200,10 +200,10 @@ var nonLinearSlider = document.getElementById('nonlinear');
 noUiSlider.create(nonLinearSlider, {
 connect: true,
 behaviour: 'tap',
-start: [ 10, 600 ],
+start: [ 10, 300 ],
 range: {
 min: 10,
-max: 600
+max: 300
 }
 });
 
