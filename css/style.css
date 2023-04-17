@@ -361,8 +361,8 @@ nav .submenu-container a:nth-child(8) {
   
   .product-image{
 	display: inline-block;
-	max-width: 150px;
-	max-height: 150px;
+	max-width: 200px;
+	max-height: 200px;
 	object-fit: cover;
   }
   .description {
