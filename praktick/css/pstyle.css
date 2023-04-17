@@ -58,7 +58,7 @@ font-weight: bolder;
 
 .wrapper {
   text-align: center;
-  background-image: linear-gradient(#ccc, #fff);
+  background: #fff;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;

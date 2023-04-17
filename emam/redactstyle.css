@@ -76,8 +76,9 @@ input[type="submit"] {
 }
 .wrapper {
   text-align: center;
-  background-image: linear-gradient(#ccc, #fff);
-  max-width: 1400px;
+background: #fff;
+margin: 100px auto;
+  max-width: 1010px;
   margin-left: auto;
   margin-right: auto;
 }
