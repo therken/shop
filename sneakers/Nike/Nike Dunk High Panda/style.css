@@ -40,7 +40,7 @@ nav a {
 .back{
   font-size: 1rem;
 	background-color: #00000000;
-	color: white;
+	color: rgb(0, 0, 0);
 	transition: .5s ease;
 	outline: none;
 	border: none;
@@ -166,7 +166,7 @@ a:hover {
   padding-left:25px;
   padding-right:25px;
   box-sizing:border-box;
-  color:#000000;
+  color:#fff;
   cursor:pointer;
   -webkit-transition:all .3s ease;
           transition:all .3s ease;
