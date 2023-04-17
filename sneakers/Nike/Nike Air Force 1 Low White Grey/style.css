@@ -126,8 +126,8 @@ h3 {
 }
 
 .highlight-window {
-  height: 480px;
-  width: 660px;
+  height: 545px;
+  width: 755px;
   background: #252020;
   background: url('https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-force-1-low-white-grey-4.jpeg');
   background-size: cover;
@@ -135,15 +135,6 @@ h3 {
   z-index: 10;
   position:relative;
   background-position:center top;
-}
-
-.color {
-  height: 30px;
-  cursor:pointer;
-  width: 30px;
-  background: #eee;
-  border: 1px solid #eee;
-  position:relative;
 }
 .background-element {
   background: #b1b2b8;
@@ -157,39 +148,6 @@ h3 {
           transform: rotate(-5deg);
   -webkit-transition:background .6s ease;
           transition:background .6s ease;
-}
-.color.overlay {
-  position:absolute;
-  z-index:10;
-  background:transparent;
-  top:-1px;
-  left:-1px;
-  -webkit-transform:translateX(45px);
-      -ms-transform:translateX(45px);
-          transform:translateX(45px);
-  border:2px solid #fff;
-  outline:2px solid #ccc;
-  -webkit-transition:-webkit-transform .3s ease;
-          transition:transform .3s ease;
-}
-.color-a {
-  background: #333;
-  margin-right:14px;
-}
-
-.color-b {
-  background: rgb(197, 21, 21);
-
-}
-
-.color-picker {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 77px;
-  margin-top:5px;
-  position:relative;
 }
 a {
   text-decoration:none;
@@ -226,16 +184,6 @@ a:hover {
   margin-bottom:20px;
   margin-left:auto;
   margin-right:auto;
-}
-.color-options {
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:-ms-flexbox;
-  display:flex;
-  width:50%;
-  -webkit-flex-flow:column;
-      -ms-flex-flow:column;
-          flex-flow:column;
 }
 .size-picker {
   display:-webkit-box;
@@ -412,9 +360,6 @@ a:hover {
   }
   .button {
     width:100%;
-  }
-  .color-options {
-    margin-bottom:15px;
   }
   .align-right {
     -webkit-align-self:flex-start;
