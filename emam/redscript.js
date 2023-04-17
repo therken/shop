@@ -35,3 +35,6 @@ $(document).ready(function() {
 window.onload = function() {
   document.getElementById("form").reset();
 }
+function goBack() {
+  window.history.back();
+}

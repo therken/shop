@@ -1,63 +1,58 @@
-/* Стили для всего документа */
 * {
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  text-decoration: none;
+  transition: all .2s linear;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-}
-nav {
-  background-color: #f0f0f0;
-  padding: 10px;
-}
-nav ul {
-  list-style: none;
   margin: 0;
-  padding: 0;
-  display: flex;
+  font-size: medium;
 }
 
-nav ul li {
-  position: relative;
-  margin-right: 20px;
+nav {
+  transition: all .3s ease;
+  background: #000000;
 }
 
-nav ul li a {
-  display: block;
-  padding: 10px;
-  color: #333;
+nav a {
   text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+
+nav a {
+  padding: 15px;
+}
+.menu2{
+   position: relative;
+   margin: 0 auto;
+   overflow: hidden;
+}
+.menu2 ul li{
+   list-style: none;
+}
+.menu2 ul li,
+.menu2 ul li a{
+   color: #fff;
+   line-height: 24px;
+   text-decoration: none;
 }
 
 nav ul li:hover > ul {
-  display: flex;
+  display: block;
 }
-
-nav ul ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid #ccc;
-  flex-direction: column;
-}
-
-nav ul ul li {
-  width: 200px;
-}
-
-nav ul ul li a {
-  padding: 5px 10px;
-}
-
-nav ul ul ul {
-  left: 100%;
-  top: 0;
+.back{
+  font-size: 1rem;
+background-color: #000000;
+color: white;
+margin: 10px;
+transition: .5s ease;
+outline: none;
+border: none;
+cursor: pointer;
+font-weight: bolder;
 }
 
 /* Стили для формы */
@@ -100,10 +95,10 @@ input[type="password"]:focus {
   background-color: #e6e6e6;
 }
 
-button {
+.send {
   margin: 10px 10px;
 }
-button {
+.send {
   border: none;
   outline: none;
   display: inline-block;
@@ -115,12 +110,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.send:hover {
   transform: scale(1.1);
   background-color: #d31cc4;
 }
 
-button a {
+.send a {
   color: #fff;
   text-decoration: none;
 }

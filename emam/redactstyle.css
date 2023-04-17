@@ -1,39 +1,58 @@
-body{
-  background-color: rgb(255, 255, 255);
-}
-nav {
-  background-color: #f0f0f0;
-  padding: 10px;
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-nav ul li {
-  position: relative;
-  margin-right: 20px;
-}
-nav ul li a {
-  display: block;
-  padding: 10px;
-  color: #333;
+* {
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
   text-decoration: none;
+  transition: all .2s linear;
 }
-nav ul ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 200px;
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 10px;
-  display: none;
+
+body {
+  margin: 0;
+  font-size: medium;
+}
+
+nav {
+  transition: all .3s ease;
+  background: #000000;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+
+nav a {
+  padding: 15px;
+}
+.menu2{
+   position: relative;
+   margin: 0 auto;
+   overflow: hidden;
+}
+.menu2 ul li{
+   list-style: none;
+}
+.menu2 ul li,
+.menu2 ul li a{
+   color: #fff;
+   line-height: 24px;
+   text-decoration: none;
 }
 
 nav ul li:hover > ul {
   display: block;
+}
+.back{
+  font-size: 1rem;
+background-color: #000000;
+color: white;
+margin: 10px;
+transition: .5s ease;
+outline: none;
+border: none;
+cursor: pointer;
+font-weight: bolder;
 }
 textarea {
   resize: none;
