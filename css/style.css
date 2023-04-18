@@ -403,7 +403,7 @@ nav .submenu-container a:nth-child(8) {
   .cart-modal {
 	height: 100%;
 	width: 50%;
-	background-color: #6f6f6f;
+	background-color: #000000;
 	overflow: scroll;
 	overflow-x: hidden;
 	outline: .1rem solid #f700ff;;
@@ -476,7 +476,7 @@ nav .submenu-container a:nth-child(8) {
   .remove-btn {
 	font-size: 1.2rem;
 	background-color: #d31cc400;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	border-radius: 20px;
 	padding: 0.6em 1em;
 	margin-left:  2em;
