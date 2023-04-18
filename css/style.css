@@ -422,7 +422,7 @@ nav .submenu-container a:nth-child(8) {
 	margin-left: auto;
 	margin-right: auto;
 	color: #ffffff;
-	font-size: 1.5rem;
+	font-size: 1rem;
   }
   
   .total {
@@ -474,12 +474,13 @@ nav .submenu-container a:nth-child(8) {
   }
   
   .remove-btn {
-	font-size: 1rem;
-	background-color: #d31cc4;
-	color: white;
+	font-size: 1.2rem;
+	background-color: #d31cc400;
+	color: rgb(0, 0, 0);
 	border-radius: 20px;
 	padding: 0.6em 1em;
 	margin-left:  2em;
+	cursor: pointer;
   }
   
   .remove-btn:active {
