@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/infa.css">
+    <script src="../script.js"></script>
     <title>feedback</title>
 </head>
 <body>
@@ -24,23 +25,16 @@
                 <button type="submit" class="send">Вход</button>
             </div>
         </div>
-        <script>
-            // Получаем все textarea элементы на странице
+<script>
 var textareas = document.getElementsByTagName('textarea');
-
-// Для каждого textarea
 for (var i = 0; i < textareas.length; i++) {
-
-  // Устанавливаем атрибуты для автоматического изменения размера
   textareas[i].setAttribute('style', 'height:' + (textareas[i].scrollHeight) + 'px;overflow-y:hidden;');
   textareas[i].addEventListener("input", OnInput, false);
 }
-
-// Функция, вызываемая при изменении текста в textarea
 function OnInput() {
   this.style.height = 'auto';
   this.style.height = (this.scrollHeight) + 'px';
 }
-        </script>
+</script>
 </body>
 </html>
