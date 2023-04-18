@@ -479,8 +479,8 @@ nav .submenu-container a:nth-child(8) {
 	color: rgb(255, 255, 255);
 	border-radius: 20px;
 	padding: 0.6em 1em;
-	margin-left:  2em;
 	cursor: pointer;
+	font-weight: bold;
   }
   
   .remove-btn:active {

@@ -29,7 +29,7 @@
                 <input type="text" maxlength="8" id="cardName" onkeypress="return (event.charCode > 64 && 
                     event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="Name" oninput="cardName()">
                 <div style="margin:0;padding:0;margin-right:20px"></div>
-                <input type="text" id="cardSurname" onkeypress="return (event.charCode > 64 && 
+                <input type="text" maxlength="10" id="cardSurname" onkeypress="return (event.charCode > 64 && 
                 event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="Surname" oninput="cardSurname()">
             </div>
             <div class="second-div">
@@ -113,7 +113,7 @@
     <div class="container" id="container">
         <input type="text" class="dost" placeholder="Имя">
         <input type="text" class="dost" placeholder="Фамилия"> 
-        <input type="text" class="dost" placeholder="emal для связи">       
+        <input type="text" class="dost" placeholder="email для связи">       
         <input type="text" class="dost" placeholder="Страна">
         <input type="text" class="dost" placeholder="Город">
         <input type="text" class="dost" placeholder="Адрес">

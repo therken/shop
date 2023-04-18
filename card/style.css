@@ -9,12 +9,10 @@
     box-sizing: border-box;
     text-decoration: none;
     transition: all .2s linear;
-    text-transform: capitalize;
   }
   
   body {
     font-size: medium;
-    font-family: 'Raleway', 'Lato', sans-serif;
     text-align: center;
   }
 
