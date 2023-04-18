@@ -486,12 +486,6 @@ nav .submenu-container a:nth-child(8) {
   .remove-btn:active {
 	transform: translateY(5px);
   }
-  .trash{
-	height: 24px;
-  }
- .box {
-   display: block;
- }
  .product.-close {
    display: none;
  }
