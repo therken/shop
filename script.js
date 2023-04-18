@@ -119,20 +119,20 @@ var cartRowItems = `
 <span class ="cart-price">${price}</span>
 <input class="product-quantity" type="number" value="1" max=3>
 <input class="size" type="number" placeholder="size"  min="38" max="48">
-<button class="remove-btn">Remove</button>
+<i id="close-btn" class="fa fa-times"></i>
 </div>
 
 `
 productRow.innerHTML = cartRowItems;
 productRows.append(productRow);
-productRow.getElementsByClassName('remove-btn')[0].addEventListener('click', removeItem)
+productRow.getElementsByClassName('fa fa-times')[0].addEventListener('click', removeItem)
 productRow.getElementsByClassName('product-quantity')[0].addEventListener('change', changeQuantity)
 updateCartPrice()
 }
 // end of add products to cart
 
 // Remove products from cart
-const removeBtn = document.getElementsByClassName('remove-btn');
+const removeBtn = document.getElementsByClassName('fa fa-times');
 for (var i = 0; i < removeBtn.length; i++) {
 button = removeBtn[i]
 button.addEventListener('click', removeItem)
