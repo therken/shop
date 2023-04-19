@@ -2,7 +2,7 @@
 $host= 'localhost';
 $user = 'root';
 $pass = '';
-$db = 'form'; 
+$db = 'shop'; 
 $conn = mysqli_connect($host , $user , $pass , $db);
 // Check connection
 if($conn === false){
@@ -21,7 +21,7 @@ $startDate = date('Y-m-d', strtotime("01/01/1900"));
 $endDate = date('Y-m-d', strtotime("01/10/2024"));
 
 ///проверка существования email-адреса
-$sql = "SELECT mail FROM user_form WHERE mail='$mail'";
+$sql = "SELECT mail FROM redactprofile WHERE mail='$mail'";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 $errorMessage = "Этот email уже используется";
@@ -63,7 +63,7 @@ if (move_uploaded_file($tempFilePath, $uploadFile)) {
 }
 $photo_link = $uploadFile; 
 ///добавление значений в бд
-  $sql = "INSERT INTO user_form (nick,firstname, secondname , mail, about, date,img)
+  $sql = "INSERT INTO redactprofile (nick,firstname, secondname , mail, about, date,img)
   VALUES ('$nick' , '$name', '$sec',  '$mail', '$about', '$edate','$photo_link')";
   ///вывод сообщения о том что данные добавлены
   if(mysqli_query($conn, $sql)){
