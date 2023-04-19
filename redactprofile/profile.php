@@ -10,9 +10,7 @@ if($conn === false){
       . mysqli_connect_error());
 }
 ///переменные
-$name = mysqli_real_escape_string($conn ,$_POST['name']);
-$sec = mysqli_real_escape_string($conn,$_POST['secondname']);
-$last = mysqli_real_escape_string($conn,$_POST['lastname']);
+$name = mysqli_real_escape_string($conn ,$_POST['firstname']);
 $mail = mysqli_real_escape_string($conn,$_POST['mail']);
 $about = mysqli_real_escape_string($conn,$_POST['about']);
 $edate=strtotime($_POST['date']); 
@@ -60,11 +58,12 @@ if (move_uploaded_file($tempFilePath, $uploadFile)) {
 } else {
     $errorMessage = "Возможная атака с помощью файловой загрузки!";
     echo "'$errorMessage";
+    die();
 }
 $photo_link = $uploadFile; 
 ///добавление значений в бд
-  $sql = "INSERT INTO user_form (firstname, secondname, lastname, mail, about, date,img)
-  VALUES ('$name', '$sec', '$last', '$mail', '$about', '$edate','$photo_link')";
+  $sql = "INSERT INTO redactprofile (firstname, mail, about, date,img)
+  VALUES ('$name', '$mail', '$about', '$edate','$photo_link')";
   ///вывод сообщения о том что данные добавлены
   if(mysqli_query($conn, $sql)){
     $successMessage= "Информация добавлена.";  
