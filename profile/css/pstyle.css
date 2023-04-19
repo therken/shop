@@ -64,3 +64,17 @@ font-weight: bolder;
   margin-right: auto;
 }
 
+a.redact{
+  font-size: 1rem;
+	background-color: #000000;
+	color: white;
+	border-radius: 20px;
+	padding: 0.6em 1em;
+	margin: 2% auto;
+	transition: .5s ease;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-weight: bolder;
+  text-decoration: none;
+}
