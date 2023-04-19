@@ -2,7 +2,7 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$db = 'form';
+$db = 'shop';
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 if ($conn === false) {
@@ -10,7 +10,7 @@ if ($conn === false) {
 }
 
 // Использование подготовленных выражений
-$stmt = mysqli_prepare($conn, "INSERT INTO form (email, password) VALUES (?, ?)");
+$stmt = mysqli_prepare($conn, "INSERT INTO reg (email, password) VALUES (?, ?)");
 if ($stmt === false) {
     die("ERROR: Could not prepare statement. " . mysqli_error($conn));
 }
@@ -22,7 +22,7 @@ $password = $_POST['psw'];
 $hashed_password = md5($password);
 
 // Проверка наличия email в базе данных
-$check_email_query = mysqli_prepare($conn, "SELECT email FROM form WHERE email = ?");
+$check_email_query = mysqli_prepare($conn, "SELECT email FROM reg WHERE email = ?");
 mysqli_stmt_bind_param($check_email_query, 's', $mail);
 mysqli_stmt_execute($check_email_query);
 mysqli_stmt_store_result($check_email_query);

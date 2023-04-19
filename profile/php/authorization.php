@@ -2,7 +2,7 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$db = 'form';
+$db = 'shop';
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 if ($conn === false) {
@@ -13,7 +13,7 @@ $mail = $_POST['mail'];
 $password = md5($_POST['psw']);
 
 // Использование подготовленных выражений
-$stmt = mysqli_prepare($conn, "SELECT * FROM form WHERE email=? AND password=?");
+$stmt = mysqli_prepare($conn, "SELECT * FROM reg WHERE email=? AND password=?");
 mysqli_stmt_bind_param($stmt, 'ss', $mail, $password);
 mysqli_stmt_execute($stmt);
 $result = mysqli_stmt_get_result($stmt);
