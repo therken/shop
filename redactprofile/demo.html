@@ -20,35 +20,47 @@
         </ul>
         </nav>
         </div>
-<div class="container">
-<div class="row mt-5">
-<div class="col-md-4 left-part">
-<form action="profile.php" method="POST" enctype="multipart/form-data">
-<div class="form-group text-center">
-<label type="file" for="profile-photo">
-<img src="https://preview.redd.it/imrpoved-steam-default-avatar-v0-ffxjnceu7vf81.png?width=640&crop=smart&auto=webp&s=0f8cbc4130a94fc83f19418f1a734209108c2a4b" class="rounded-circle" alt="Фото профиля">
-</label>
-<input name="image" type="file" class="form-control-file" id="profile-photo" style="display: none">
-<label for="image">Выберите фотографию</label>
-</div>
-</div>
-<div class="col-md-8 right-part">
-<div class="form-group">
-<label for="firstname">Имя:</label>
-<input type="text" class="form-control" id="firstname" name="firstname" required>
-</div>
-<div class="form-group">
-<label for="mail">Email:</label>
-<input type="text" name="mail" type="email" class="form-control" id="mail" required>
-</div>
-<div class="form-group">
-<label for="about-me">О себе:</label>
-<textarea required type="text" maxlength="1000" class="form-control" id="about" rows="3" name="about"></textarea>
-</div>
-<input type="submit" placeholder="Отправить" value="Сохранить">
-</div>
-</div>
-</div>
-</form>
+        <div class="container">
+            <div class="row mt-5">
+            <div class="col-md-4 left-part">
+            <form action="profile.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group text-center">
+            <label type="file" for="profile-photo">
+            <img src="https://preview.redd.it/imrpoved-steam-default-avatar-v0-ffxjnceu7vf81.png?width=640&crop=smart&auto=webp&s=0f8cbc4130a94fc83f19418f1a734209108c2a4b" class="rounded-circle" alt="Фото профиля">
+            </label>
+            <input name="image" type="file" class="form-control-file" id="profile-photo" style="display: none">
+            <label for="image">Выберите фотографию</label>
+            </div>
+            </div>
+            <div class="col-md-8 right-part">
+                <div class="form-group">
+                <label for="nickname">Ник:</label>
+                <input type="text" class="form-control" id="nickname" name="nickname" required>
+                </div>
+            <div class="form-group">
+            <label for="firstname">Имя:</label>
+            <input type="text" class="form-control" id="firstname" name="firstname" required>
+            </div>
+            <div class="form-group">
+              <label for="lastname">Фамилия:</label>
+            <input type="text" class="form-control" id="secondname" name="secondname" required>
+            </div>
+            <div class="form-group">
+            <label for="date">Дата рождения:</label>
+            <input type="date" class="form-control" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+            <label for="mail">Email:</label>
+            <input type="text" name="mail" type="email" class="form-control" id="mail" required>
+            </div>
+            <div class="form-group">
+            <label for="about-me">О себе:</label>
+            <textarea required type="text" maxlength="1000" class="form-control" id="about" rows="3" name="about"></textarea>
+            </div>
+            <input type="submit" placeholder="Отправить" value="Сохранить">
+            </div>
+            </div>
+            </div>
+            </form>
 </body>
 </html>
