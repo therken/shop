@@ -1,14 +1,5 @@
 <?php
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$db = 'shop';
-
-$conn = mysqli_connect($host, $user, $pass, $db);
-if ($conn === false) {
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
-
+include ('setting.php');
 $mail = $_POST['mail'];
 $password = md5($_POST['psw']);
 
@@ -21,7 +12,7 @@ if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_assoc($result);
     session_start();
     $_SESSION['login'] = true;
-    header("Location: ../profile.html");
+    header("Location: ../profile.php");
 } else {
     // Если пользователь с таким email не найден, выводится сообщение об ошибке
     echo '<script>alert("Неверный логин."); window.location.href="../authorization.html";</script>';

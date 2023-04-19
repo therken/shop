@@ -1,20 +1,13 @@
 <?php
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$db = 'shop';
-
-$conn = mysqli_connect($host, $user, $pass, $db);
-if ($conn === false) {
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-}
+include ('setting.php');
 
 // Использование подготовленных выражений
-$stmt = mysqli_prepare($conn, "INSERT INTO reg (email, password) VALUES (?, ?)");
+$stmt = mysqli_prepare($conn, "INSERT INTO reg (name,secondname,email, password) VALUES (?, ?, ?, ?)");
 if ($stmt === false) {
     die("ERROR: Could not prepare statement. " . mysqli_error($conn));
 }
-
+$name = $_POST['name'];
+$secondname = $_POST['secondname'];
 $mail = $_POST['mail'];
 $password = $_POST['psw'];
 
@@ -33,7 +26,7 @@ if (mysqli_stmt_num_rows($check_email_query) > 0) {
     exit;
 }
 
-mysqli_stmt_bind_param($stmt, 'ss', $mail, $hashed_password);
+mysqli_stmt_bind_param($stmt, 'ssss', $name,$secondname,$mail, $hashed_password);
 
 if (mysqli_stmt_execute($stmt)) {
     mysqli_stmt_close($stmt);
