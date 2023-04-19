@@ -118,7 +118,8 @@ var cartRowItems = `
 <span class="description">${description}</span>
 <span class ="cart-price">${price}</span>
 <input class="product-quantity" type="number" value="1" max=3>
-<input class="size" type="number" placeholder="size"  min="38" max="48">
+<span>Размер</span>
+<input class="size" type="number" value="38"  min="38" max="48">
 <button class="remove-btn">x</button>
 </div>
 
