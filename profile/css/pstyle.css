@@ -77,4 +77,6 @@ a.redact{
 	cursor: pointer;
 	font-weight: bolder;
   text-decoration: none;
+  display: block;
+  width: 20%;
 }
