@@ -13,7 +13,7 @@ if (isset($_POST['email'])) {
     $_SESSION['email'] = $_POST['email'];
 }
 $email = $_SESSION['email'];
-$sql = "SELECT email, name, secondname FROM reg WHERE email='$email'";
+$sql = "SELECT email, name, secondname, date, about FROM reg WHERE email='$email'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 mysqli_close($conn);
@@ -51,9 +51,9 @@ mysqli_close($conn);
 <tbody>
 <tr><td class="active">Имя</td><td><?php echo $row['name'] ; ?></td></tr>
 <tr><td class="active">Фамилия</td><td><?php echo $row['secondname']; ?></td></tr>
-<tr><td class="active">Дата рождения</td><td></td></tr>
+<tr><td class="active">Дата рождения</td><td><?php echo $row['date']; ?></td></tr>
 <tr><td class="active">mail</td><td><?php echo $_SESSION['email'] ;?></td></tr>
-<tr><td class="active">Обо мне</td><td></td></tr>
+<tr><td class="active">Обо мне</td><td><?php echo $row['about']; ?></td></tr>
 </tbody>
 </table>
 </div>

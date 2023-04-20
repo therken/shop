@@ -258,7 +258,7 @@ transition: all 250ms ease-in-out;
 	outline: none;
 	border: none;
 	cursor: pointer;
-	font-weight: bolder;;
+	font-weight: bolder;
 }
   nav {
     transition: all .3s ease;

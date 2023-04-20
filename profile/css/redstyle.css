@@ -9,7 +9,6 @@
 body {
   margin: 0;
   font-size: medium;
-  font-family: 'Raleway', 'Lato', sans-serif;
 }
 
 nav {
@@ -101,6 +100,7 @@ nav a {
   width: 300px;
 margin-left: 40%;
 margin-top: 10%;
+text-align: center;
 }
 input:focus {
   outline:none;
@@ -121,23 +121,20 @@ input[type="submit"] {
   background-color: #e6cb3300;
   border: 2px solid #22272d;
   color: #000000;
-  width: 105%;
+  width: 100%;
   padding: 5px;
   height: 40px;
   margin-top: 2%;
   border-radius: 10px;
 }
-textarea{
-  background: transparent;
-  background-color: #e6cb3300;
-  border: 2px solid #22272d;
-  color: #000000;
-  width: 100%;
-  padding: 5px;
-  margin-top: 2%;
-  outline:none;
-  resize: none;
-  overflow: hidden;
-  min-height: 50px;
-  border-radius: 10px;
+.back{
+  font-size: 1rem;
+	background-color: #000000;
+	color: white;
+	border-radius: 20px;
+	padding: 0.1em 0.8em;
+	transition: .5s ease;
+	outline: none;
+	border: none;
+	font-weight: bolder;;
 }

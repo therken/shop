@@ -14,14 +14,21 @@ if (isset($_POST['email'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $secondname = mysqli_real_escape_string($conn, $_POST['secondname']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $date = mysqli_real_escape_string($conn, $_POST['date']);
+    $about = mysqli_real_escape_string($conn, $_POST['about']);
 
     // Обновляем данные в базе данных
-    $sql = "UPDATE reg SET name='$name', secondname='$secondname' WHERE email='$email'";
+    $sql = "UPDATE reg SET name='$name', secondname='$secondname', date='$date',about='$about' WHERE email='$email'";
+    if (mysqli_query($conn, $sql)) {
+        header("Location: ./profile.php");
+    } else {
+        echo "Ошибка при обновлении данных: " . mysqli_error($conn);
+    }
 }
 
 // Получаем данные пользователя из базы данных для отображения в форме редактирования
 $email = $_SESSION['email'];
-$sql = "SELECT email, name, secondname FROM reg WHERE email='$email'";
+$sql = "SELECT email FROM reg WHERE email='$email'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 mysqli_close($conn);
@@ -48,15 +55,23 @@ mysqli_close($conn);
     <div class="wrapper">
 <form method="post">
 <div class="mb-3">
-    <label for="text" class="form-label">Name</label>
+    <label for="name" class="form-label">Name</label>
     <input type="text" class="col-xs-2" id="text" name="name"value="<?php echo $row['name']; ?>">
   </div>
 
   <div class="mb-3">
-  <label for="exampleInputEmail1" class="form-label">Имя</label>
-    <input type="text" class="col-xs-2" id="exampleInputEmail1" aria-describedby="emailHelp"name="secondname" value="<?php echo $row['secondname']; ?>">
+  <label for="secondname" class="form-label">Имя</label>
+    <input type="text" class="col-xs-2"aria-describedby="emailHelp"name="secondname" value="<?php echo $row['secondname']; ?>">
 </div>
-<div class="form-group">
+<div class="mb-3">
+<label for="date">Дата рождения:</label>
+<input type="date" class="col-xs-2" id="date" name="date" value="<?php echo $row['date']; ?>">
+</div>
+<div class="mb-3">
+  <label for="about" class="form-label">Расскажите о себе</label>
+    <input type="text" maxlength="100" class="col-xs-2" name="about" value="<?php echo $row['about']; ?>">
+</div>
+<div class="mb-3">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" value="<?php echo $row['email']; ?>" readonly>
 </div>
