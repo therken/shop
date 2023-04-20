@@ -132,7 +132,7 @@ input[type="submit"] {
 	background-color: #000000;
 	color: white;
 	border-radius: 20px;
-	padding: 0.1em 0.8em;
+	padding: 0.1em 0.4em;
 	transition: .5s ease;
 	outline: none;
 	border: none;
