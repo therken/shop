@@ -31,7 +31,7 @@ mysqli_stmt_bind_param($stmt, 'ssss', $name,$secondname,$mail, $hashed_password)
 if (mysqli_stmt_execute($stmt)) {
     mysqli_stmt_close($stmt);
     mysqli_close($conn);
-    echo '<script>alert("Информация добавлена успешно."); window.location.href="../reg.html";</script>';
+    echo '<script>alert("Информация добавлена успешно."); window.location.href="../authorization.html";</script>';
     exit;
 } else {
     echo "Ошибка: " . mysqli_error($conn);

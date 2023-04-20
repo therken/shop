@@ -10,23 +10,14 @@ if($conn === false){
       . mysqli_connect_error());
 }
 ///переменные
-$nick = mysqli_real_escape_string($conn,$_POST['nickname']);
-$name = mysqli_real_escape_string($conn ,$_POST['firstname']);
+$name = mysqli_real_escape_string($conn ,$_POST['name']);
 $sec = mysqli_real_escape_string($conn,$_POST['secondname']);
-$mail = mysqli_real_escape_string($conn,$_POST['mail']);
 $about = mysqli_real_escape_string($conn,$_POST['about']);
 $edate=strtotime($_POST['date']); 
 $edate=date("Y-m-d",$edate);
 $startDate = date('Y-m-d', strtotime("01/01/1900"));
 $endDate = date('Y-m-d', strtotime("01/10/2024"));
 
-///проверка существования email-адреса
-$sql = "SELECT mail FROM redactprofile WHERE mail='$mail'";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-$errorMessage = "Этот email уже используется";
-echo "$errorMessage";
-} else {
   ///проверка даты
 if (($edate >= $startDate) && ($edate <= $endDate)) {
   echo "";
@@ -63,8 +54,8 @@ if (move_uploaded_file($tempFilePath, $uploadFile)) {
 }
 $photo_link = $uploadFile; 
 ///добавление значений в бд
-  $sql = "INSERT INTO redactprofile (nick,firstname, secondname , mail, about, date,img)
-  VALUES ('$nick' , '$name', '$sec',  '$mail', '$about', '$edate','$photo_link')";
+  $sql = "INSERT INTO redactprofile (name, secondname, about, date,img)
+  VALUES ('$name', '$sec', '$about', '$edate','$photo_link')";
   ///вывод сообщения о том что данные добавлены
   if(mysqli_query($conn, $sql)){
     $successMessage= "Информация добавлена.";  
@@ -74,6 +65,5 @@ $photo_link = $uploadFile;
         . mysqli_error($conn);
         echo "$errormeMessage";
   }
-}
 mysqli_close($conn);
 ?>

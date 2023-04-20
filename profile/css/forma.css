@@ -117,11 +117,6 @@ input[type="text"]{
   cursor: pointer;
 }
 
-.send:hover {
-  transform: scale(1.1);
-  background-color: #d31cc4;
-}
-
 .send a {
   color: #fff;
   text-decoration: none;
