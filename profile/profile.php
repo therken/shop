@@ -43,7 +43,7 @@ mysqli_close($conn);
     <div class="menu2">
         <nav>
         <ul>
-            <li> <button class="back" onclick="goBack()">Назад</button></li>
+            <li> <button class="back" onclick="goBack()">Назад</button> <button class="back"onclick="window.location.href='../home.html'">Главная</button></li>
         </ul>
         </nav>
         </div>
