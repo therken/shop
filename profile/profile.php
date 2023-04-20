@@ -3,7 +3,6 @@ include ('./php/setting.php');
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
-
 session_start();
 if (!isset($_SESSION['login']) || !$_SESSION['login']) {
     header("Location: ./authorization.html");
@@ -13,16 +12,11 @@ if (!isset($_SESSION['login']) || !$_SESSION['login']) {
 if (isset($_POST['email'])) {
     $_SESSION['email'] = $_POST['email'];
 }
-
 $email = $_SESSION['email'];
 $sql = "SELECT email, name, secondname FROM reg WHERE email='$email'";
-
 $result = mysqli_query($conn, $sql);
-
 $row = mysqli_fetch_assoc($result);
-
 mysqli_close($conn);
-
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +46,7 @@ mysqli_close($conn);
 </header>
 </div>
 <img src="https://avatars.mds.yandex.net/i?id=3b42883ebede69f7cba84695be433e669a7e5088-8710632-images-thumbs&n=13" >
-<a href="../redactprofile/demo.html" class="redact">Редактировать профиль</a>
+<a href="./redact.php" class="redact">Редактировать профиль</a>
 <table class="table table-th-block">
 <tbody>
 <tr><td class="active">Имя</td><td><?php echo $row['name'] ; ?></td></tr>
