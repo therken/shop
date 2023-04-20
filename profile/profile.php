@@ -1,5 +1,28 @@
 <?php
-include ('setting.php');
+include ('./php/setting.php');
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+session_start();
+if (!isset($_SESSION['login']) || !$_SESSION['login']) {
+    header("Location: ./authorization.html");
+    exit();
+}
+
+if (isset($_POST['email'])) {
+    $_SESSION['email'] = $_POST['email'];
+}
+
+$email = $_SESSION['email'];
+$sql = "SELECT email, name, secondname FROM reg WHERE email='$email'";
+
+$result = mysqli_query($conn, $sql);
+
+$row = mysqli_fetch_assoc($result);
+
+mysqli_close($conn);
+
 ?>
 
 <!DOCTYPE html>
@@ -32,10 +55,10 @@ include ('setting.php');
 <a href="../redactprofile/demo.html" class="redact">Редактировать профиль</a>
 <table class="table table-th-block">
 <tbody>
-<tr><td class="active">Имя</td><td></td></tr>
-<tr><td class="active">Фамилия</td><td></td></tr>
+<tr><td class="active">Имя</td><td><?php echo $row['name'] ; ?></td></tr>
+<tr><td class="active">Фамилия</td><td><?php echo $row['secondname']; ?></td></tr>
 <tr><td class="active">Дата рождения</td><td></td></tr>
-<tr><td class="active">mail</td><td class="email"></td></tr>
+<tr><td class="active">mail</td><td><?php echo $_SESSION['email'] ;?></td></tr>
 <tr><td class="active">Обо мне</td><td></td></tr>
 </tbody>
 </table>

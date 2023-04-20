@@ -12,11 +12,13 @@ if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_assoc($result);
     session_start();
     $_SESSION['login'] = true;
+    $_SESSION['email'] = $row['email']; // обновляем email в сессии
     header("Location: ../profile.php");
 } else {
     // Если пользователь с таким email не найден, выводится сообщение об ошибке
     echo '<script>alert("Неверный логин."); window.location.href="../authorization.html";</script>';
 }
+
 
 mysqli_stmt_close($stmt);
 mysqli_close($conn);
