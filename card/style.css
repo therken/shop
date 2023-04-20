@@ -16,11 +16,11 @@
 .container {
     margin-top: 50px;
     max-width: 400px;
-    height: 400px;
-    padding: 10px;
-    margin: 50px auto;
+    height: 450px;
+    padding: 8px;
+    margin: 95px auto;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 40px;
     border-style: solid;
     border-color: black;
     overflow: hidden;
@@ -51,10 +51,10 @@
 }
 
 .logo {
-    width: 100px;
+    width: 120px;
     position: absolute;
-    right: 0px;
-    top: 130px;
+    right: 15px;
+    top: 135px;
 }
 
 .expirition {
