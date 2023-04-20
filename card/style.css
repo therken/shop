@@ -18,7 +18,7 @@
     max-width: 400px;
     height: 400px;
     padding: 10px;
-    margin: 300px auto;
+    margin: 50px auto;
     background-color: white;
     border-radius: 15px;
     border-style: solid;
@@ -258,7 +258,7 @@ transition: all 250ms ease-in-out;
 	outline: none;
 	border: none;
 	cursor: pointer;
-	font-weight: bolder;
+	font-weight: bolder;;
 }
   nav {
     transition: all .3s ease;
