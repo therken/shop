@@ -17,11 +17,6 @@ if (isset($_POST['email'])) {
 
     // Обновляем данные в базе данных
     $sql = "UPDATE reg SET name='$name', secondname='$secondname' WHERE email='$email'";
-    if (mysqli_query($conn, $sql)) {
-        echo "Данные успешно обновлены";
-    } else {
-        echo "Ошибка при обновлении данных: " . mysqli_error($conn);
-    }
 }
 
 // Получаем данные пользователя из базы данных для отображения в форме редактирования
@@ -39,9 +34,17 @@ mysqli_close($conn);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Редактирование</title>
     <link rel="stylesheet" href="./css/redstyle.css">
+    <script src="../script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+<div class="menu2">
+        <nav>
+        <ul>
+            <li> <button class="back" onclick="goBack()">Назад</button></li>
+        </ul>
+        </nav>
+        </div>
     <div class="wrapper">
 <form method="post">
 <div class="mb-3">

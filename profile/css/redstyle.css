@@ -1,4 +1,45 @@
 @charset "UTF-8";
+* {
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+body {
+  margin: 0;
+  font-size: medium;
+  font-family: 'Raleway', 'Lato', sans-serif;
+}
+
+nav {
+  transition: all .3s ease;
+  background: #000000;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+}
+
+nav a {
+  padding: 15px;
+}
+.menu2{
+   position: relative;
+   margin: 0 auto;
+   overflow: hidden;
+}
+.menu2 ul li{
+   list-style: none;
+}
+.menu2 ul li,
+.menu2 ul li a{
+   color: #fff;
+   line-height: 44px;
+   text-decoration: none;
+}
 .avatar-wrapper {
   position: relative;
   height: 250px;
@@ -55,13 +96,7 @@
 .avatar-wrapper .upload-button:hover  {
   opacity: 0.9;
 }
-* {
-  font-family: 'Nunito', sans-serif;
-  margin:0; padding:0;
-  box-sizing: border-box;
-  text-decoration: none;
-  transition: all .2s linear;
-}
+
  .wrapper {
   width: 300px;
 margin-left: 40%;
