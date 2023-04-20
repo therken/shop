@@ -1,1 +1,1 @@
-Nash Magazin
+Nash Magaz
