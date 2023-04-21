@@ -480,3 +480,9 @@ text-align: center;
   height: 20px;
   border: 0;
   }
+  .filter{
+	width: 17%;
+	background: #eeeeee;	
+	 padding: 10px 5px;
+   margin: 10px 0;
+  }
