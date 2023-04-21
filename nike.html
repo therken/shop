@@ -36,6 +36,10 @@
 </div>
 </nav>
 <div class="container">
+    <hr>
+    <button id="sort-asc">По возрастанию</button>
+    <button id="sort-desc">По убыванию</button>
+    <hr>
 <div class="cart-modal-overlay">
 <div class="cart-modal">
 <i id="close-btn" class="fa fa-times"></i>
@@ -62,89 +66,80 @@
 <button class="add-to-cart">Отправить</button>
 </div>
 <div class="overlay hidden"></div>
-<div class="filter-range">
-<div id="nonlinear" class="noUi-target noUi-ltr noUi-horizontal"></div>
-<span class="example-val" id="lower-value"></span>
-<span class="example-val" id="upper-value"></span>
-</div>
-<div class="products-container">
-<div class="product" data-name="p-1">
+<div class="products-container" id="all">
+<div class="product" data-name="p-1" data-price="100">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-1-mid-white-black-red.jpeg" alt="">
 <span class="description">Air Jordan 1 Mid White Black Red</span>
 <span class="product-price">100$</span>
 </div>
-<div class="product" data-name="p-2">
+<div class="product" data-name="p-2" data-price="230">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-wmns-washed-denim.jpeg" alt="">
 <span class="description">Nike Dunk High WMNS Washed Denim</span>
 <span class="product-price">230$</span>
 </div>
-<div class="product" data-name="p-3">
+<div class="product" data-name="p-3" data-price="179">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-panda.jpeg" alt="">
 <span class="description">Nike Dunk High Panda</span>
 <span class="product-price">179$</span>
 </div>
-<div class="product" data-name="p-4">
+<div class="product" data-name="p-4" data-price="170">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-force-1-low-sanddrift.jpeg" alt="">
 <span class="description">Nike Air Force 1 Low Sanddrift</span>
 <span class="product-price">170$</span>
 </div>
-<div class="product" data-name="p-5">
+<div class="product" data-name="p-5" data-price="70">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-low-wmns-white-black.jpg" alt="">
 <span class="description">Nike Dunk Low WMNS White Black</span>
 <span class="product-price">70$</span>
 </div>
 
-</div>
-<div class="products-container">
-<div class="product" data-name="p-6">
+<div class="product" data-name="p-6" data-price="200">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-5-aqua.jpeg" alt="">
 <span class="description">Air Jordan 5 Aqua</span>
 <span class="product-price">200$</span>
 </div>
-<div class="product" data-name="p-7">
+<div class="product" data-name="p-7" data-price="80">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-wmns-court-legacy-lift-white-black.jpg" alt="">
 <span class="description">Nike WMNS Court Legacy Lift White Black</span>
 <span class="product-price">80$</span>
 </div>
-<div class="product" data-name="p-8">
+<div class="product" data-name="p-8" data-price="130">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-force-1-low-white-grey-4.jpeg" alt="">
 <span class="description">Nike Air Force 1 Low White Grey</span>
 <span class="product-price">130$</span>
 </div>
-<div class="product" data-name="p-9">
+<div class="product" data-name="p-9" data-price="120">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-1-low-concord.jpeg" alt="">
 <span class="description">Air Jordan 1 Low Concord</span>
 <span class="product-price">120$</span>
 </div>
-<div class="product" data-name="p-10">
+<div class="product" data-name="p-10" data-price="190">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-11-low-cement-grey.jpeg" alt="">
 <span class="description">Air Jordan 11 Low Cement Grey</span>
 <span class="product-price">190$</span>
 </div>
 
-</div>
-<div class="products-container">
-<div class="product" data-name="p-11">
+<div class="product" data-name="p-11" data-price="250">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-foamposite-one-dream-a-world-black.jpeg" alt="">
 <span class="description">Nike Air Foamposite One Dream A World Black</span>
 <span class="product-price">250$</span>
 </div>
-<div class="product" data-name="p-12">
+<div class="product" data-name="p-12" data-price="190">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-low-rainbow-trout.jpeg" alt="">
 <span class="description">Nike Dunk Low Rainbow Trout</span>
 <span class="product-price">190$</span>
 </div>
-<div class="product" data-name="p-13">
+<div class="product" data-name="p-13" data-price="190">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-4-black-cat-2020.jpg" alt="">
 <span class="description">Air Jordan 4 Black Cat 2020</span>
 <span class="product-price">190$</span>
 </div>
-<div class="product" data-name="p-14">
+<div class="product" data-name="p-14" data-price="185">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-13-retro-cement-grey.jpg" alt="">
 <span class="description">Air Jordan 13 Retro Cement Grey</span>
 <span class="product-price">185$</span>
 </div>
-<div class="product" data-name="p-15">
+<div class="product" data-name="p-15" data-price="135">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-1-mid-space-jam.jpeg" alt="">
 <span class="description">Air Jordan 1 Mid Space Jam</span>
 <span class="product-price">135$</span>

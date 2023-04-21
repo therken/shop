@@ -52,6 +52,10 @@
 </div>
 </nav>
 <div class="container">
+    <hr>
+    <button id="sort-asc">По возрастанию</button>
+    <button id="sort-desc">По убыванию</button>
+    <hr>
 <div class="cart-modal-overlay">
 <div class="cart-modal">
 <i id="close-btn" class="fa fa-times"></i>
@@ -78,58 +82,53 @@
 <button class="add-to-cart">Отправить</button>
 </div>
 <div class="overlay hidden"></div>
-<div class="filter-range">
-<div id="nonlinear" class="noUi-target noUi-ltr noUi-horizontal"></div>
-<span class="example-val" id="lower-value"></span>
-<span class="example-val" id="upper-value"></span>
-</div>
-<div class="products-container">
-<div class="product" data-name="p-1">
+<div class="products-container" id="all">
+<div class="product" data-name="p-1" data-price="100">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-1-mid-white-black-red.jpeg" alt="">
 <span class="description">Air Jordan 1 Mid White Black Red</span>
 <span class="product-price">100$</span>
 </div>
-<div class="product" data-name="p-2">
+<div class="product" data-name="p-2" data-price="104">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-wmns-washed-denim.jpeg" alt="">
 <span class="description">Nike Dunk High WMNS Washed Denim</span>
 <span class="product-price">104$</span>
 </div>
-<div class="product" data-name="p-3">
+<div class="product" data-name="p-3" data-price="130">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-panda.jpeg" alt="">
 <span class="description">Nike Dunk High Panda</span>
 <span class="product-price">130$</span>
 </div>
-<div class="product" data-name="p-4">
+<div class="product" data-name="p-4" data-price="70">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-force-1-low-sanddrift.jpeg" alt="">
 <span class="description">Nike Air Force 1 Low Sanddrift</span>
 <span class="product-price">70$</span>
 </div>
-<div class="product" data-name="p-5">
+<div class="product" data-name="p-5" data-price="80">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-low-wmns-white-black.jpg" alt="">
 <span class="description">Nike Dunk Low WMNS White Black</span>
 <span class="product-price">80$</span>
 </div>
-<div class="product" data-name="p-6">
+<div class="product" data-name="p-6" data-price="200">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_pusha-t-x-adidas-originals-eqt-guidance-93-black-market.jpg" alt="">
 <span class="description">Pusha T x adidas Originals EQT Guidance 93 Black Market</span>
 <span class="product-price">200$</span>
 </div>
-<div class="product" data-name="p-7">
+<div class="product" data-name="p-7" data-price="150">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-nmd-r1-core-black-solar-orange.jpg" alt="">
 <span class="description">adidas NMD R1 Core Black Solar Orange</span>
 <span class="product-price">150$</span>
 </div>
-<div class="product" data-name="p-8">
+<div class="product" data-name="p-8" data-price="70">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-u-path-run-cloud-white.jpg" alt="">
 <span class="description">adidas U_Path Run Cloud White</span>
 <span class="product-price">70$</span>
 </div>
-<div class="product" data-name="p-9">
+<div class="product" data-name="p-9" data-price="204">
 <img class="product-image" src="https://cdn.shopify.com/s/files/1/0473/6965/0340/products/c71b22048494e33ea72f9bccc57cbdd8452441b9_GY8947_Adidas_Crazy_1_Lakers_Footwear_White_Bold_Gold_Court_Purple_os_1_768x768.jpg?v=1680690180" alt="">
 <span class="description">adidas Crazy 1 Lakers Home</span>
 <span class="product-price">204$</span>
 </div>
-<div class="product" data-name="p-10">
+<div class="product" data-name="p-10" data-price="110">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-ozweego-core-black-cloud-white.jpg" alt="">
 <span class="description">adidas Ozweego Core Black Cloud White</span>
 <span class="product-price">110$</span>

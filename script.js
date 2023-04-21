@@ -196,50 +196,7 @@ function purchaseBtnClicked () {
   }
   updateCartPrice();
 }
-var nonLinearSlider = document.getElementById('nonlinear');
 
-noUiSlider.create(nonLinearSlider, {
-connect: true,
-behaviour: 'tap',
-start: [ 10, 300 ],
-range: {
-min: 10,
-max: 300
-}
-});
-
-var nodes = [
-document.getElementById('lower-value'), // 0
-document.getElementById('upper-value')  // 1
-];
-
-// Display the slider value and how far the handle moved
-// from the left edge of the slider.
-nonLinearSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
-nodes[handle].innerHTML = values[handle];  
-verifyBoxes(values)
-});
-
-
-function verifyBoxes(v) {
-var boxesArr = [].slice.call(document.querySelectorAll(".product")).map(function(item){
-return item
-});
-
-for (var i =0; i < boxesArr.length; i++) {
-var box = boxesArr[i]
-var price = box.querySelector('.product-price').textContent
-var priceNumb = parseInt(price)
-var vMin = v[0]
-var vMax = v[1]
-
-if (priceNumb > vMax || priceNumb < vMin  ) {
-box.classList.add('-close') 
-} else {
-box.classList.remove('-close')
-}
-}
-}
 function goBack() {
   window.history.back();
 }
@@ -275,3 +232,49 @@ document.addEventListener('keydown', function(evt) {
         }
 });
 
+// Сортировка по возрастанию/по убыванию/по рейтингу
+document.querySelector("button#sort-asc").onclick = function () {
+  mySort("data-price");
+};
+document.querySelector("button#sort-desc").onclick = function () {
+  mySortDesc("data-price");
+};
+document.querySelector("button#sort-rating").onclick = function () {
+  mySortDesc("data-rating");
+};
+
+// По возрастанию
+function mySort(sortType) {
+  let nav = document.querySelector(".products-container");
+  for (let i = 0; i < nav.children.length; i++) {
+    for (let j = i; j < nav.children.length; j++) {
+      if (
+        +nav.children[i].getAttribute(sortType) >
+        +nav.children[j].getAttribute(sortType)
+      ) {
+        replacedNode = nav.replaceChild(nav.children[j], nav.children[i]);
+        insertAfter(replacedNode, nav.children[i]);
+      }
+    }
+  }
+}
+
+// По убыванию и рейтингу
+function mySortDesc(sortType) {
+  let nav = document.querySelector(".products-container");
+  for (let i = 0; i < nav.children.length; i++) {
+    for (let j = i; j < nav.children.length; j++) {
+      if (
+        +nav.children[i].getAttribute(sortType) <
+        +nav.children[j].getAttribute(sortType)
+      ) {
+        replacedNode = nav.replaceChild(nav.children[j], nav.children[i]);
+        insertAfter(replacedNode, nav.children[i]);
+      }
+    }
+  }
+}
+
+function insertAfter(elem, refElem) {
+  return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
+}
