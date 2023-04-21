@@ -28,21 +28,6 @@ nav .menu {
 	display: flex;
 	justify-content: space-between;
 }
-.list {
-	padding: 20px 10px 0;
- }
- 
- label  {
-   cursor: pointer;
- }
- 
- .li__item {
-	padding: 10px 5px;
-	margin: 10px 0;
-	background-color: #fff;
-	cursor: pointer;
- }
-
 nav a {
 	padding: 15px;
 }
