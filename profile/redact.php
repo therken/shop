@@ -17,16 +17,40 @@ $edate = date("Y-m-d", $edate);
 $startDate = date('Y-m-d', strtotime("01/01/1900"));
 $endDate = date('Y-m-d', strtotime("01/10/2024"));
 
-    // проверка даты
-    if (($edate >= $startDate) && ($edate <= $endDate)) {
-        echo "";
-    } else {
-        $errorMessage = "некорректная дата";
-        echo $errorMessage; 
-        die();
-    }
+// проверка даты
+if (($edate >= $startDate) && ($edate <= $endDate)) {
+echo "";
+} else {
+$errorMessage = "некорректная дата";
+echo $errorMessage; 
+die();
+}
+$uploaddir = 'uploads/';
+$tempFilePath = $_FILES['image']['tmp_name']; 
+$fileName = $_FILES['image']['name']; 
+$uploadFile = $uploaddir . uniqid() . '-' . basename($fileName); 
 
-$sql = "UPDATE reg SET name='$name', secondname='$secondname', date='$edate',about='$about' WHERE email='$email'";
+if(!is_uploaded_file($_FILES['image']['tmp_name'])) {
+$errorMessage = "Выберите изображение";
+echo "$errorMessage";
+die();
+} 
+
+//Проверка что это картинка
+if (!getimagesize($_FILES["image"]["tmp_name"])) {
+$errorMessage = "Это не картинка...";
+echo "$errorMessage";
+die();
+}
+
+if (move_uploaded_file($tempFilePath, $uploadFile)) {
+header("Location: ./profile.php");
+} else {
+$errorMessage = "Возможная атака с помощью файловой загрузки!";
+echo "'$errorMessage";
+}
+$photo_link = $uploadFile; 
+$sql = "UPDATE reg SET name='$name', secondname='$secondname', date='$edate',about='$about',photo_link='$photo_link' WHERE email='$email'";
 if (mysqli_query($conn, $sql)) {
 header("Location: ./profile.php");
 } else {
@@ -47,6 +71,9 @@ mysqli_close($conn);
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Редактирование</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link rel="stylesheet" href="./css/redstyle.css">
 <script src="../script.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -60,12 +87,16 @@ mysqli_close($conn);
 </nav>
 </div>
 <div class="wrapper">
-<form method="post">
+<form method="post" enctype="multipart/form-data">
+<label type="file" for="profile-photo">
+<img src="https://preview.redd.it/imrpoved-steam-default-avatar-v0-ffxjnceu7vf81.png?width=640&crop=smart&auto=webp&s=0f8cbc4130a94fc83f19418f1a734209108c2a4b" class="rounded-circle" alt="Фото профиля">
+</label>
+<input name="image" type="file" class="form-control-file" id="profile-photo" style="display: none">
+<label for="image">Выберите фотографию</label>
 <div class="mb-3">
 <label for="name" class="form-label">Имя</label>
 <input type="text" class="col-xs-2" id="text" required name="name"value="<?php echo $row['name']; ?>">
 </div>
-
 <div class="mb-3">
 <label for="secondname" class="form-label">Фамилия</label>
 <input type="text" class="col-xs-2" required name="secondname" value="<?php echo $row['secondname']; ?>">
@@ -85,6 +116,23 @@ mysqli_close($conn);
 <input type="submit" value="Обновить данные">
 </form>
 </div>
+<script>
+$(document).ready(function() {
+$('textarea').on('input', function () {
+this.style.height = 'auto';
+this.style.height = (this.scrollHeight) + 'px';
+});
+});
+$(document).ready(function() {
+$('#profile-photo').change(function() {
+var reader = new FileReader();
+reader.onload = function(e) {
+$('label[for="profile-photo"] img').attr('src', e.target.result);
+};
+reader.readAsDataURL(this.files[0]);
+});
+});
+</script>
 </body>
 </html>
 <!-- Форма редактирования профиля -->
