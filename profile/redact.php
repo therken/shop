@@ -2,37 +2,37 @@
 include ('./php/setting.php');
 session_start();
 
-// Проверка авторизации пользователя
 if (!isset($_SESSION['login']) || !$_SESSION['login']) {
-header("Location: ./authorization.html");
-exit();
+  header("Location: ./authorization.html");
+  exit();
 }
-
-// Если форма отправлена
 if (isset($_POST['email'])) {
-// Получаем новые значения данных из формы редактирования профиля
-$name = mysqli_real_escape_string($conn, $_POST['name']);
-$secondname = mysqli_real_escape_string($conn, $_POST['secondname']);
-$email = mysqli_real_escape_string($conn, $_POST['email']);
-$date = mysqli_real_escape_string($conn, $_POST['date']);
-$about = mysqli_real_escape_string($conn, $_POST['about']);
+  $name = mysqli_real_escape_string($conn, $_POST['name']);
+  $secondname = mysqli_real_escape_string($conn, $_POST['secondname']);
+  $email = mysqli_real_escape_string($conn, $_POST['email']);
+  $date = mysqli_real_escape_string($conn, $_POST['date']);
+  $about = mysqli_real_escape_string($conn, $_POST['about']);
 
-// Обновляем данные в базе данных
-$sql = "UPDATE reg SET name='$name', secondname='$secondname', date='$date',about='$about' WHERE email='$email'";
-if (mysqli_query($conn, $sql)) {
-header("Location: ./profile.php");
-} else {
-echo "Ошибка при обновлении данных: " . mysqli_error($conn);
-}
-}
+  $date_unix = strtotime($date);
+  if ($date_unix === false) {
+    echo "Некорректная дата";
+    exit();
+  }
 
-// Получаем данные пользователя из базы данных для отображения в форме редактирования
+  $sql = "UPDATE reg SET name='$name', secondname='$secondname', date='$date',about='$about' WHERE email='$email'";
+  if (mysqli_query($conn, $sql)) {
+    header("Location: ./profile.php");
+  } else {
+    echo "Ошибка при обновлении данных: " . mysqli_error($conn);
+  }
+}
 $email = $_SESSION['email'];
 $sql = "SELECT email FROM reg WHERE email='$email'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
 mysqli_close($conn);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
