@@ -11,11 +11,22 @@ if (isset($_POST['email'])) {
 $name = mysqli_real_escape_string($conn, $_POST['name']);
 $secondname = mysqli_real_escape_string($conn, $_POST['secondname']);
 $email = mysqli_real_escape_string($conn, $_POST['email']);
-$date = mysqli_real_escape_string($conn, $_POST['date']);
 $about = mysqli_real_escape_string($conn, $_POST['about']);
+$edate = strtotime($_POST['date']); 
+$edate = date("Y-m-d", $edate);
+$startDate = date('Y-m-d', strtotime("01/01/1900"));
+$endDate = date('Y-m-d', strtotime("01/10/2024"));
 
+    // проверка даты
+    if (($edate >= $startDate) && ($edate <= $endDate)) {
+        echo "";
+    } else {
+        $errorMessage = "некорректная дата";
+        echo $errorMessage; 
+        die();
+    }
 
-$sql = "UPDATE reg SET name='$name', secondname='$secondname', date='$date',about='$about' WHERE email='$email'";
+$sql = "UPDATE reg SET name='$name', secondname='$secondname', date='$edate',about='$about' WHERE email='$email'";
 if (mysqli_query($conn, $sql)) {
 header("Location: ./profile.php");
 } else {
