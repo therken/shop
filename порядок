@@ -14,3 +14,4 @@
 17) E-Mail рассылка по клиентам;сычев
 
 
+sudo chmod -R 777 /opt/lampp/htdocs/shop/.git
