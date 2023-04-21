@@ -173,7 +173,8 @@ nav a {
  
  .container .products-container{
 	display: inline-flex;
-	padding: 10px 100px;
+	padding: 10px 10px;
+	flex-wrap: wrap;
  }
  
  .container .products-container .product{
@@ -185,6 +186,7 @@ nav a {
 	overflow: hidden; 
 	text-align: center;
 	z-index: 1;
+	flex:1 0 20%;
  }
  
  .container .products-container .product:hover{
