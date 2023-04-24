@@ -16,7 +16,6 @@
 .container {
     margin-top: 50px;
     max-width: 400px;
-    height: 450px;
     padding: 8px;
     margin: 95px auto;
     background-color: white;
@@ -287,4 +286,7 @@ transition: all 250ms ease-in-out;
      color: #fff;
      line-height: 44px;
      text-decoration: none;
+  }
+  hr{
+    margin: 10px;
   }
