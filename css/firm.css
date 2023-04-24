@@ -366,12 +366,13 @@ nav a {
   }
   
   .remove-btn {
-	font-size: 1rem;
-	background-color: #d31cc4;
-	color: white;
+	font-size: 1.2rem;
+	background-color: #d31cc400;
+	color: rgb(255, 255, 255);
 	border-radius: 20px;
 	padding: 0.6em 1em;
-	margin-left:  2em;
+	cursor: pointer;
+	font-weight: bold;
   }
   
   .remove-btn:active {

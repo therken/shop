@@ -169,17 +169,31 @@ function getCookie(name) {
   return null;
 }
 
-// Remove products from cart
+// Удаление товаров с корзины
 const removeBtn = document.getElementsByClassName('remove-btn');
 for (var i = 0; i < removeBtn.length; i++) {
-button = removeBtn[i]
-button.addEventListener('click', removeItem)
+  button = removeBtn[i]
+  button.addEventListener('click', removeItem)
 }
 
 function removeItem (event) {
-btnClicked = event.target
-btnClicked.parentElement.parentElement.remove()
-updateCartPrice()
+  btnClicked = event.target
+  btnClicked.parentElement.parentElement.remove()
+  updateCartPrice()
+  
+  // получаем текущее значение куки
+  const cartItems = JSON.parse(getCookie('cartItems') || '[]');
+  
+  // находим индекс товара, который нужно удалить
+  const index = cartItems.findIndex((item) => {
+    return item.imageSrc === btnClicked.parentElement.querySelector('.cart-image').src;
+  });
+  
+  // если товар был найден, удаляем его из куки
+  if (index !== -1) {
+    cartItems.splice(index, 1);
+    setCookie('cartItems', JSON.stringify(cartItems), 7);
+  }
 }
 
 // update quantity input

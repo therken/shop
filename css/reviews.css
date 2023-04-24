@@ -23,7 +23,7 @@ nav a {
 .menu2 ul li,
 .menu2 ul li a{
    color: #fff;
-   line-height: 25px;
+   line-height: 20px;
    text-decoration: none;
 }
 .back{
@@ -36,6 +36,7 @@ outline: none;
 border: none;
 cursor: pointer;
 font-weight: bolder;
+margin-left: -20px;
 }
 .pointer{
   cursor:pointer;
