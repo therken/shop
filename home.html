@@ -20,7 +20,7 @@
 <div class="menu2">
 <ul>
 <div class="cart-btn">
-    <li><a href="profile/reg.html"><i id="us"class="fa fa-user" aria-hidden="true"></a></i></li>
+<li><a href="profile/reg.html"><i id="us"class="fa fa-user" aria-hidden="true"></a></i></li>
 <li><i id="cart" class="fa fa-shopping-basket" aria-hidden="true"></i></li>
 <span class ="cart-quantity">0</span>
 </div>
@@ -50,10 +50,10 @@
 </div>
 </nav>
 <div class="container">
-    <div class="filter">
-    <button class="sort" id="sort-asc">По возрастанию</button>
-    <button class="sort" id="sort-desc">По убыванию</button>
-    </div>
+<div class="filter">
+<button class="sort" id="sort-asc">По возрастанию</button>
+<button class="sort" id="sort-desc">По убыванию</button>
+</div>
 <div class="cart-modal-overlay">
 <div class="cart-modal">
 <i id="close-btn" class="fa fa-times"></i>
@@ -231,26 +231,7 @@
 </div>
 </div>
 </div>
-<script>
-     var productPrice = document.querySelector(".product-price").textContent;
-  document.getElementsByName("price")[0].value = productPrice;
-  var productPrice = document.querySelector(".description").textContent;
-  document.getElementsByName("desc")[0].value = productPrice;
-    </script>
 <script  src="./script.js"></script>
 <script src="menu.js"></script>
-<script>   const products = document.querySelectorAll('.product');
-
-    products.forEach(product => {
-      const price = product.getAttribute('data-price');
-      const description = product.querySelector('.description').textContent;
-      const priceInput = document.querySelector('input[name="price"]');
-      const descInput = document.querySelector('input[name="desc"]');
-    
-      product.addEventListener('click', () => {
-        priceInput.value = price;
-        descInput.value = description;
-      });
-    });</script>
 </body>
 </html>

@@ -32,10 +32,10 @@
 </div>
 </nav>
 <div class="container">
-    <div class="filter">
-    <button class="sort" id="sort-asc">По возрастанию</button>
-    <button class="sort" id="sort-desc">По убыванию</button>
-    </div>
+<div class="filter">
+<button class="sort" id="sort-asc">По возрастанию</button>
+<button class="sort" id="sort-desc">По убыванию</button>
+</div>
 <div class="cart-modal-overlay">
 <div class="cart-modal">
 <i id="close-btn" class="fa fa-times"></i>
@@ -49,23 +49,23 @@
 </div>
 </div>  
 <div class="modal hidden">
-    <h1>Быстрый заказ</h1>
-    <h3>Оплата при получении</h3>
-    <button class="close-modal">&times;</button>
-    <form action="oplata.php" method="post">
-    <input type="text" class="dost" name="name" placeholder="Имя" required>
-    <input type="text" class="dost" name="lastname" placeholder="Фамилия" required>
-    <input type="text" class="dost" name="email" placeholder="email для связи" required>        
-    <input type="text" class="dost" name="country" placeholder="Страна" required>
-    <input type="text" class="dost" name="city" placeholder="Город" required>
-    <input type="text" class="dost" name="address" placeholder="Адрес" required>
-    <input type="number" class="dost" name="size" min="38" max="48" value="38" required>
-    <input type="hidden" name="price">
-    <input type="hidden" name="desc">
-    <button class="add-to-cart">Отправить</button>
-    </form>
-    </div>
-    <div class="overlay hidden"></div>
+<h1>Быстрый заказ</h1>
+<h3>Оплата при получении</h3>
+<button class="close-modal">&times;</button>
+<form action="oplata.php" method="post">
+<input type="text" class="dost" name="name" placeholder="Имя" required>
+<input type="text" class="dost" name="lastname" placeholder="Фамилия" required>
+<input type="text" class="dost" name="email" placeholder="email для связи" required>        
+<input type="text" class="dost" name="country" placeholder="Страна" required>
+<input type="text" class="dost" name="city" placeholder="Город" required>
+<input type="text" class="dost" name="address" placeholder="Адрес" required>
+<input type="number" class="dost" name="size" min="38" max="48" value="38" required>
+<input type="hidden" name="price">
+<input type="hidden" name="desc">
+<button class="add-to-cart">Отправить</button>
+</form>
+</div>
+<div class="overlay hidden"></div>
 <div class="products-container" id="all">
 <div class="product" data-name="p-1" data-price="206">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_disney-x-adidas-wmns-nmd-r1-bambi.jpg" alt="">
@@ -288,16 +288,16 @@
 <script  src="./script.js"></script>
 <script>   const products = document.querySelectorAll('.product');
 
-   products.forEach(product => {
-	 const price = product.getAttribute('data-price');
-	 const description = product.querySelector('.description').textContent;
-	 const priceInput = document.querySelector('input[name="price"]');
-	 const descInput = document.querySelector('input[name="desc"]');
-   
-	 product.addEventListener('click', () => {
-	   priceInput.value = price;
-	   descInput.value = description;
-	 });
-   });</script>
+products.forEach(product => {
+const price = product.getAttribute('data-price');
+const description = product.querySelector('.description').textContent;
+const priceInput = document.querySelector('input[name="price"]');
+const descInput = document.querySelector('input[name="desc"]');
+
+product.addEventListener('click', () => {
+priceInput.value = price;
+descInput.value = description;
+});
+});</script>
 </body>
 </html>
