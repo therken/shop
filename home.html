@@ -70,18 +70,18 @@
 <h1>Быстрый заказ</h1>
 <h3>Оплата при получении</h3>
 <button class="close-modal">&times;</button>
-<form action="oplata.php" method="post">
-    <input type="text" class="dost" name="description" placeholder="Описание" required>
-    <input type="number" class="dost" name="price" placeholder="Цена" required>
-    <input type="text" class="dost" name="name" placeholder="Имя" required>
-    <input type="text" class="dost" name="lastname" placeholder="Фамилия" required>
-    <input type="email" class="dost" name="email" placeholder="Email для связи" required>        
-    <input type="text" class="dost" name="country" placeholder="Страна" required>
-    <input type="text" class="dost" name="city" placeholder="Город" required>
-    <input type="text" class="dost" name="address" placeholder="Адрес" required>
-    <input type="number" class="dost" name="size" min="38" max="48" value="38">
-    <button class="add-to-cart" type="submit">Отправить</button>
-  </form>
+<form action="oplata.php" method="post"></form>
+<input type="text" class="dost" name="name" placeholder="Имя">
+<input type="text" class="dost" name="lastname" placeholder="Фамилия">
+<input type="text" class="dost" name="email" placeholder="email для связи">        
+<input type="text" class="dost" name="country" placeholder="Страна">
+<input type="text" class="dost" name="city" placeholder="Город">
+<input type="text" class="dost" name="address" placeholder="Адрес">
+<label class="dost" id="description" id="description">f</label>
+<label class="dost" name="price" id="price">f</label>
+<input type="number" class="dost" name="size" min="38" max="48" value="38">
+<button class="add-to-cart">Отправить</button>
+</form>
 </div>
 <div class="overlay hidden"></div>
 <div class="products-container" id="all">

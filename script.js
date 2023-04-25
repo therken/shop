@@ -251,7 +251,37 @@ function purchaseBtnClicked () {
 function goBack() {
   window.history.back();
 }
+'use strict';
 
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.close-modal');
+const btnsOpenModal = document.querySelectorAll('.show-modal');
+
+const openModal = function () {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+}
+
+const closeModal = () => {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+}
+
+for (let i = 0; i < btnsOpenModal.length; i++) {
+    btnsOpenModal[i].addEventListener('click', openModal);
+}
+
+btnCloseModal.addEventListener('click',closeModal);
+overlay.addEventListener('click',closeModal);
+
+document.addEventListener('keydown', function(evt) {
+    console.log(evt.key);
+
+    if (evt.key === 'Escape' && !modal.classList.contains('hidden')) {
+            closeModal();
+        }
+});
 
 // Сортировка по возрастанию/по убыванию/по рейтингу
 document.querySelector("button#sort-asc").onclick = function () {
@@ -299,16 +329,3 @@ function mySortDesc(sortType) {
 function insertAfter(elem, refElem) {
   return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
 }
-  // Показываем модальное окно
-  modal.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-;
-
-const closeModalButton = document.querySelector('.close-modal');
-closeModalButton.addEventListener('click', () => {
-  // Скрываем модальное окно
-  modal.classList.add('hidden');
-  overlay.classList.add('hidden');
-});
-
-
