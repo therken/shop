@@ -71,13 +71,13 @@
 <h3>Оплата при получении</h3>
 <button class="close-modal">&times;</button>
 <form action="oplata.php" method="post">
-<input type="text" class="dost" name="name" placeholder="Имя">
-<input type="text" class="dost" name="lastname" placeholder="Фамилия">
-<input type="text" class="dost" name="email" placeholder="email для связи">        
-<input type="text" class="dost" name="country" placeholder="Страна">
-<input type="text" class="dost" name="city" placeholder="Город">
-<input type="text" class="dost" name="address" placeholder="Адрес">
-<input type="number" class="dost" name="size" min="38" max="48" value="38">
+<input type="text" class="dost" name="name" placeholder="Имя" required>
+<input type="text" class="dost" name="lastname" placeholder="Фамилия" required>
+<input type="text" class="dost" name="email" placeholder="email для связи" required>        
+<input type="text" class="dost" name="country" placeholder="Страна" required>
+<input type="text" class="dost" name="city" placeholder="Город" required>
+<input type="text" class="dost" name="address" placeholder="Адрес" required>
+<input type="number" class="dost" name="size" min="38" max="48" value="38" required>
 <input type="hidden" name="price">
 <input type="hidden" name="desc">
 <button class="add-to-cart">Отправить</button>
