@@ -69,17 +69,19 @@
 <div class="modal hidden">
 <h1>Быстрый заказ</h1>
 <h3>Оплата при получении</h3>
-<form action="oplata.php">
 <button class="close-modal">&times;</button>
-<input type="text" class="dost" placeholder="Имя">
-<input type="text" class="dost" placeholder="Фамилия">
-<input type="text" class="dost" placeholder="email для связи">        
-<input type="text" class="dost" placeholder="Страна">
-<input type="text" class="dost" placeholder="Город">
-<input type="text" class="dost" placeholder="Адрес">
-<input type="number" class="dost" min="38" max="48" value="38">
-<button class="add-to-cart">Отправить</button>
-</form>
+<form action="oplata.php" method="post">
+    <input type="text" class="dost" name="description" placeholder="Описание" required>
+    <input type="number" class="dost" name="price" placeholder="Цена" required>
+    <input type="text" class="dost" name="name" placeholder="Имя" required>
+    <input type="text" class="dost" name="lastname" placeholder="Фамилия" required>
+    <input type="email" class="dost" name="email" placeholder="Email для связи" required>        
+    <input type="text" class="dost" name="country" placeholder="Страна" required>
+    <input type="text" class="dost" name="city" placeholder="Город" required>
+    <input type="text" class="dost" name="address" placeholder="Адрес" required>
+    <input type="number" class="dost" name="size" min="38" max="48" value="38">
+    <button class="add-to-cart" type="submit">Отправить</button>
+  </form>
 </div>
 <div class="overlay hidden"></div>
 <div class="products-container" id="all">
