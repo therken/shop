@@ -49,19 +49,23 @@
 </div>
 </div>  
 <div class="modal hidden">
-<h1>Быстрый заказ</h1>
-<h3>Оплата при получении</h3>
-<button class="close-modal">&times;</button>
-<input type="text" class="dost" placeholder="Имя">
-<input type="text" class="dost" placeholder="Фамилия">
-<input type="text" class="dost" placeholder="email для связи">        
-<input type="text" class="dost" placeholder="Страна">
-<input type="text" class="dost" placeholder="Город">
-<input type="text" class="dost" placeholder="Адрес">
-<input type="number" class="dost" min="38" max="48" value="38">
-<button class="add-to-cart">Отправить</button>
-</div>
-<div class="overlay hidden"></div>
+    <h1>Быстрый заказ</h1>
+    <h3>Оплата при получении</h3>
+    <button class="close-modal">&times;</button>
+    <form action="oplata.php" method="post">
+    <input type="text" class="dost" name="name" placeholder="Имя" required>
+    <input type="text" class="dost" name="lastname" placeholder="Фамилия" required>
+    <input type="text" class="dost" name="email" placeholder="email для связи" required>        
+    <input type="text" class="dost" name="country" placeholder="Страна" required>
+    <input type="text" class="dost" name="city" placeholder="Город" required>
+    <input type="text" class="dost" name="address" placeholder="Адрес" required>
+    <input type="number" class="dost" name="size" min="38" max="48" value="38" required>
+    <input type="hidden" name="price">
+    <input type="hidden" name="desc">
+    <button class="add-to-cart">Отправить</button>
+    </form>
+    </div>
+    <div class="overlay hidden"></div>
 <div class="products-container" id="all">
 <div class="product" data-name="p-1" data-price="206">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_disney-x-adidas-wmns-nmd-r1-bambi.jpg" alt="">
