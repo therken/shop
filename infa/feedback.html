@@ -18,11 +18,13 @@
         </div>
         <div class="wrapper">
             <div class="f">
-                <input type="text" class="dost" placeholder="Ваше имя">
+                <form action="feedback.php" method="post">
+                <input type="text" class="dost" name="name" placeholder="Ваше имя">
 
-                <input type="email" class="dost" placeholder="Email">
-                <textarea class="dost" maxlength="1000"></textarea>
-                <button type="submit" class="send">Вход</button>
+                <input type="text" class="dost" name="mail" placeholder="Email">
+                <textarea class="dost" maxlength="1000" name="feed"></textarea>
+                <button type="submit" class="send">Отправить</button>
+                </form>
             </div>
         </div>
 <script>
