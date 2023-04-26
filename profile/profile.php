@@ -29,7 +29,7 @@ mysqli_close($conn);
 <link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/bootstrap3/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link rel="stylesheet" href="css/pstyle.css" />
-<script src="../script.js"></script>
+<script src="./script.js"></script>
 </head>
 <body>
 <div class="menu2">
