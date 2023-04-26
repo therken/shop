@@ -21,8 +21,7 @@ $endDate = date('Y-m-d', strtotime("01/10/2024"));
 if (($edate >= $startDate) && ($edate <= $endDate)) {
 echo "";
 } else {
-$errorMessage = "некорректная дата";
-echo $errorMessage; 
+    '<script>alert("Введите корректную дату"); window.location.href="./redact.php";</script>';
 die();
 }
 $uploaddir = 'uploads/';
@@ -31,15 +30,13 @@ $fileName = $_FILES['image']['name'];
 $uploadFile = $uploaddir . uniqid() . '-' . basename($fileName); 
 
 if(!is_uploaded_file($_FILES['image']['tmp_name'])) {
-$errorMessage = "Выберите изображение";
-echo "$errorMessage";
+    '<script>alert("Загрузите фото"); window.location.href="./redact.php";</script>';
 die();
 } 
 
 //Проверка что это картинка
 if (!getimagesize($_FILES["image"]["tmp_name"])) {
-$errorMessage = "Это не картинка...";
-echo "$errorMessage";
+    '<script>alert("Не картинка"); window.location.href="./redact.php";</script>';
 die();
 }
 
@@ -52,7 +49,7 @@ echo "'$errorMessage";
 $photo_link = $uploadFile; 
 $sql = "UPDATE reg SET name='$name', secondname='$secondname', date='$edate',about='$about',photo_link='$photo_link' WHERE email='$email'";
 if (mysqli_query($conn, $sql)) {
-header("Location: ./profile.php");
+    echo '<script>alert("Информация обновлена."); window.location.href="./profile.php";</script>';
 } else {
 echo "Ошибка при обновлении данных: " . mysqli_error($conn);
 }
