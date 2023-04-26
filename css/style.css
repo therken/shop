@@ -423,9 +423,6 @@ nav .submenu-container a:nth-child(8) {
 	color: white;
 	cursor: pointer;
   }
-  #close-btn:hover{
-	transform: rotate(90deg);
-  }
   .product-rows {
 	margin-top: 1em;
 	width: 95%;
