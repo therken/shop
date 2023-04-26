@@ -1,41 +1,45 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Reviews</title>
-  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'><link rel="stylesheet" href="../css/reviews.css">
-
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8">
+<title>Reviews</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/infa.css">
+<link rel="stylesheet" href="../css/infa.css">
+<script src="../script/script.js"></script>
+<script src="../script/script.js"></script>
+<title>feedback</title>
+</head>
 </head>
 <body>
-  <div class="menu2">
-    <nav>
-    <ul>
-    <li> <button class="back" onclick="goBack()">Назад</button></li>
-    </ul>
-    </nav>
-    </div>
-<section class="faq_dynamic-main">
-    <div class="container">
-        <div class="listing__faq py-4"><div class="faq_inner-listing"><h2 class="secondary-color py-2 f-24">Напишите свой отзыв</h2><div class="faq_box-wrapper"><div class="faq_form-box-inner border border-1 border-secondary rounded p-3"><input type="text" name="listing_faq-question" id="review-username" placeholder="Name" class="w-100 py-2 form-control rounded-0" required><div class="input-group"><textarea aria-label="With textarea" rows="4" cols="50" id="rewiew_message" placeholder="Message" class="form-control mt-3 w-100 rounded-0" required></textarea></div><div class="list_add-faq pt-4">
-         <div class="input-group align-items-center">
-          <div class="send p-1 rounded bg-black"><h3 class="text-white f-10  m-0">Добавить</h3></div></div></div></div></div></div>
-    </div>  </section>
+<body>
+<div class="menu2">
+<div class="menu2">
+@@ -14,14 +16,27 @@
+</ul>
+</ul>
+</nav>
+</nav>
+</div>
+</div>
+<div class="review">
+<div class="wrapper">
+<form method="post" action="reviews.php"><form action="feedback.php" method="post">
+<div class="f">
+<form action="feedback.php" method="post">
+<input type="text" class="dost" name="name" placeholder="Ваше имя">
+<input type="text" class="dost" name="name" placeholder="Ваше имя">
+<textarea class="dost" maxlength="1000" placeholder="ваш отзыв"name="message"></textarea>
 
-<section class="content-wrapper-faq py-5">
-  <div class="container">
-      <h3 class="main-head text-center">Отзывы</h3>
-    <div class="main_reviews-container">
-      <div class="border py-3 my-2 border-dark rounded reviews_inner container">
-        <div class="accordian-link d-flex align-items-center pointer py-2 ">
-        <img src="https://i.redd.it/ffxjnceu7vf81.png" class="img-fluid user_image"> <h3 class="reveiew_user_name ps-3">Ботик</h3>
-        </div>
-          <p class="review_answer">аххах</p>
-    </div>
-  </div>
-</section>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="../script/reviews.js"></script>
-
-</body>
-</html>
+<button type="submit" class="send">Оставить отзыв</button>      
+<input type="email" class="dost" name="mail" placeholder="Email">
+<textarea class="dost" maxlength="1000" name="feed"></textarea>
+<button type="submit" class="send">Отправить</button>
+</form>
+</form>
+</div>
