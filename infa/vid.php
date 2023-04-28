@@ -5,7 +5,6 @@ die("Connection failed: " . mysqli_connect_error());
 }
 $sql = "SELECT name, feed FROM reviews";
 $result = mysqli_query($conn, $sql);
-$row = mysqli_fetch_assoc($result);
 mysqli_close($conn);
 ?>
 <!DOCTYPE html>
@@ -27,8 +26,10 @@ mysqli_close($conn);
 </ul>
 </nav>
 </div>
+<?php while ($row = mysqli_fetch_assoc($result)) { ?>
 <div class="review">
-<span><?php echo $row['name'] ; ?></span>
+<span><?php echo $row['name'] ; ?></span><br>
 <span><?php echo $row['feed'] ; ?></span>   
 </div>
+<?php } ?>
 </body>
