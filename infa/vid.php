@@ -1,3 +1,13 @@
+<?php
+include ('../profile/php/setting.php');
+if (!$conn) {
+die("Connection failed: " . mysqli_connect_error());
+}
+$sql = "SELECT name, feed FROM reviews";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+mysqli_close($conn);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +28,7 @@
 </nav>
 </div>
 <div class="review">
-<form method="post" action="reviews.php">
-<input type="text" class="dost" name="name" placeholder="Ваше имя">
-<textarea class="dost" maxlength="1000" placeholder="ваш отзыв"name="message"></textarea>
-<button type="submit" class="send">Оставить отзыв</button>      
-</form>
+<span><?php echo $row['name'] ; ?></span>
+<span><?php echo $row['feed'] ; ?></span>   
 </div>
 </body>

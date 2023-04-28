@@ -10,15 +10,15 @@ if ($conn === false) {
 }
 
 $name = $_POST['name'];
-$review = $_POST['review'];
+$review = $_POST['message'];
 
-$sql = mysqli_prepare($conn, "INSERT INTO reviews (name, review) VALUES (?, ?)");
+$sql = mysqli_prepare($conn, "INSERT INTO reviews (name, feed) VALUES (?, ?)");
 mysqli_stmt_bind_param($sql, 'ss', $name, $review);
 
 if (mysqli_stmt_execute($sql)) {
     mysqli_stmt_close($sql);
     mysqli_close($conn);
-    echo '<script>alert("Отзыв добавлен успешно."); window.location.href="../reviews.php";</script>';
+    echo '<script>alert("Отзыв добавлен успешно."); window.location.href="vid.php";</script>';
     exit;
 } else {
     echo "Ошибка: " . mysqli_error($conn);
