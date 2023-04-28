@@ -28,7 +28,9 @@ mysqli_close($conn);
 </div>
 <?php while ($row = mysqli_fetch_assoc($result)) { ?>
 <div class="review">
+    <h3>Имя</h3>
 <span><?php echo $row['name'] ; ?></span><br>
+</h3>Отзыв</h3><br>
 <span><?php echo $row['feed'] ; ?></span>   
 </div>
 <?php } ?>
