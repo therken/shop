@@ -21,15 +21,6 @@ background: #fff;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
-  .review {
-    max-width: 800px;
-    margin: 10px auto;
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
   * {
     font-family: 'Nunito', sans-serif;
     margin:0; padding:0;
