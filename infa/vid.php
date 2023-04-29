@@ -26,12 +26,16 @@ mysqli_close($conn);
 </ul>
 </nav>
 </div>
+<div class="wrapper">
+<div class="header">
+    <h3>Отзывы</h3>
+    </div>
 <?php while ($row = mysqli_fetch_assoc($result)) { ?>
-<div class="review">
     <h3>Имя</h3>
-<span><?php echo $row['name'] ; ?></span><br>
-</h3>Отзыв</h3><br>
-<span><?php echo $row['feed'] ; ?></span>   
-</div>
+<p><?php echo $row['name'] ; ?></p>
+<h3>Отзыв</h3>
+<span><?php echo $row['feed'] ; ?></span><hr>
 <?php } ?>
+<button class="send"><a href="reviews.html" class="dost">Добавить отзыв</a></button>
+</div>
 </body>

@@ -28,6 +28,7 @@ background: #fff;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
   * {
     font-family: 'Nunito', sans-serif;
@@ -40,7 +41,6 @@ background: #fff;
   body {
     margin: 0;
     font-size: medium;
-    font-family: 'Raleway', 'Lato', sans-serif;
   }
   
   nav {
