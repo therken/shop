@@ -104,7 +104,7 @@ mysqli_close($conn);
 </div>
 <div class="mb-3">
 <label for="about" class="form-label">Расскажите о себе</label>
-<input type="text" maxlength="100" required class="col-xs-2" name="about" value="<?php echo $row['about']; ?>">
+<textarea type="text" maxlength="100" required name="about" value="<?php echo $row['about']; ?>"></textarea>
 </div>
 <div class="mb-3">
 <label for="email">Email:</label>
