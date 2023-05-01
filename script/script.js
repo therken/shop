@@ -283,15 +283,12 @@ document.addEventListener('keydown', function(evt) {
         }
 });
 
-// Сортировка по возрастанию/по убыванию/по рейтингу
+// Сортировка по возрастанию/по убыванию
 document.querySelector("button#sort-asc").onclick = function () {
   mySort("data-price");
 };
 document.querySelector("button#sort-desc").onclick = function () {
   mySortDesc("data-price");
-};
-document.querySelector("button#sort-rating").onclick = function () {
-  mySortDesc("data-rating");
 };
 
 // По возрастанию
