@@ -34,7 +34,7 @@ mysqli_close($conn);
     <h3>Имя</h3>
 <p><?php echo $row['name'] ; ?></p>
 <h3>Отзыв</h3>
-<span><?php echo $row['feed'] ; ?></span><hr>
+<span><?php echo $row['message'] ; ?></span><hr>
 <?php } ?>
 <button class="send"><a href="reviews.html" class="dost">Добавить отзыв</a></button>
 </div>

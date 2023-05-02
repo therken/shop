@@ -12,7 +12,7 @@ if ($conn === false) {
 $name = $_POST['name'];
 $review = $_POST['message'];
 
-$sql = mysqli_prepare($conn, "INSERT INTO reviews (name, feed) VALUES (?, ?)");
+$sql = mysqli_prepare($conn, "INSERT INTO reviews (name, message) VALUES (?, ?)");
 mysqli_stmt_bind_param($sql, 'ss', $name, $review);
 
 if (mysqli_stmt_execute($sql)) {
