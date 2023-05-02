@@ -3,7 +3,7 @@ include ('../profile/php/setting.php');
 if (!$conn) {
 die("Connection failed: " . mysqli_connect_error());
 }
-$sql = "SELECT name, feed FROM reviews";
+$sql = "SELECT name, message FROM reviews";
 $result = mysqli_query($conn, $sql);
 mysqli_close($conn);
 ?>
@@ -26,7 +26,7 @@ mysqli_close($conn);
 </ul>
 </nav>
 </div>
-<div class="wrapper">
+<div class="reviews">
 <div class="header">
     <h3>Отзывы</h3>
     </div>
