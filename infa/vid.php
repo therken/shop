@@ -26,7 +26,7 @@ mysqli_close($conn);
 </ul>
 </nav>
 </div>
-<div class="reviews">
+<div class="wrapper">
 <div class="header">
     <h3>Отзывы</h3>
     </div>
