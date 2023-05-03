@@ -1,5 +1,5 @@
 <?php
-include ('./profile/php/setting.php');
+include ('../profile/php/setting.php');
 $name = $_POST['name'];
 $lastname = $_POST['lastname'];
 $email= $_POST['email'];
@@ -20,4 +20,5 @@ if (mysqli_stmt_execute($stmt)) {
 }
 mysqli_close($conn);
 ?>
+
 
