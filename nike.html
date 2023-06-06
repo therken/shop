@@ -29,13 +29,15 @@
 <a class="close"><i class="fa fa-times"></i></a>
 </ul>
 </div>
-
 </div>
 </nav>
 <div class="container">
 <div class="filter">
 <button class="sort" id="sort-asc">По возрастанию</button>
 <button class="sort" id="sort-desc">По убыванию</button>
+<input type="checkbox" name="color" data-color="white">Белый<br>
+<input type="checkbox" name="color" data-color="black">Черный<br>
+<input type="checkbox" name="color" data-color="red">Красный<br>
 </div>
 <div class="cart-modal-overlay">
 <div class="cart-modal">
@@ -145,11 +147,34 @@
 <span class="description">Air Jordan 1 Mid Space Jam</span>
 <span class="product-price">135$</span>
 </div>
-
+<div class="product" data-name="p-16" data-price="110">
+<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-huarache-triple-red.jpg" alt="">
+<span class="description">Nike Air Huarache Triple Red</span>
+<span class="product-price">110$</span>
+</div>
+<div class="product" data-name="p-17" data-price="90">
+<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-gs-black-red.jpeg" alt="">
+<span class="description">Nike Dunk High GS Black Red</span>
+<span class="product-price">90$</span>
+</div>
+<div class="product" data-name="p-18" data-price="115">
+<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-low-gym-red.jpeg" alt="">
+<span class="description">Nike Dunk Low Gym Red</span>
+<span class="product-price">115$</span>
+</div>
+<div class="product" data-name="p-19" data-price="210">
+<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-vapormax-plus-gradient-red-black.jpeg" alt="">
+<span class="description">Nike Air VaporMax Plus Gradient Red Black</span>
+<span class="product-price">210$</span>
+</div>
+<div class="product" data-name="p-20" data-price="95">
+<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-paul-rodriguez-7-premium-university-red-black-white.jpg" alt="">
+<span class="description">Nike Paul Rodriguez 7 Premium - University Red / Black - White</span>
+<span class="product-price">95$</span>
+</div>
 </div>
 
 <div class="products-preview">
-
 <div class="preview" data-target="p-1">
 <i class="fas fa-times"></i>
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-1-mid-white-black-red.jpeg" alt="">
@@ -270,9 +295,50 @@
 <button class="add-to-cart">Добавить в корзину </button>
 <button class="show-modal">Купить</button>
 </div>
+<div class="preview" data-target="p-16">
+<i class="fas fa-times"></i>
+<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-huarache-triple-red.jpg" alt="">
+<span class="description">Nike Air Huarache Triple Red</span>
+<span class="product-price">110$</span>
+<button class="add-to-cart">Добавить в корзину </button>
+<button class="show-modal">Купить</button>
+</div>
+<div class="preview" data-target="p-17">
+<i class="fas fa-times"></i>
+<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-gs-black-red.jpeg" alt="">
+<span class="description">Nike Dunk High GS Black Red</span>
+<span class="product-price">90$</span>
+<button class="add-to-cart">Добавить в корзину </button>
+<button class="show-modal">Купить</button>
+</div>
+<div class="preview" data-target="p-18">
+<i class="fas fa-times"></i>
+<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-low-gym-red.jpeg" alt="">
+<span class="description">Nike Dunk Low Gym Red</span>
+<span class="product-price">115$</span>
+<button class="add-to-cart">Добавить в корзину </button>
+<button class="show-modal">Купить</button>
+</div>
+<div class="preview" data-target="p-19">
+<i class="fas fa-times"></i>
+<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-vapormax-plus-gradient-red-black.jpeg" alt="">
+<span class="description">Nike Air VaporMax Plus Gradient Red Black</span>
+<span class="product-price">210$</span>
+<button class="add-to-cart">Добавить в корзину </button>
+<button class="show-modal">Купить</button>
+</div>
+<div class="preview" data-target="p-20">
+<i class="fas fa-times"></i>
+<img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-paul-rodriguez-7-premium-university-red-black-white.jpg" alt="">
+<span class="description">Nike Paul Rodriguez 7 Premium - University Red / Black - White</span>
+<span class="product-price">95$</span>
+<button class="add-to-cart">Добавить в корзину </button>
+<button class="show-modal">Купить</button>
+</div>
 </div>
 </div>
 <script  src="./script/script.js"></script>
 <script src="script/s.js"></script>
+<script src="script/sort.js"></script>
 </body>
 </html>
