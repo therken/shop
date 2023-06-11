@@ -112,3 +112,6 @@ height: auto;
 min-height: 50px; /* высота по умолчанию */
 max-height: 300px; /* максимальная высота */
 }
+span{
+    display: block;
+}
