@@ -16,6 +16,8 @@ mysqli_close($conn);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="../script/script.js"></script>
 <link rel="stylesheet" href="../css/infa.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link type="image/x-icon" href="./icon.png" rel="shortcut icon">
 <title>feedback</title>
 </head>
 <body>

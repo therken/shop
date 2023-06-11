@@ -8,11 +8,6 @@ text-decoration: none;
 transition: all .2s linear;
 }
 
-body {
-margin: 0;
-font-size: medium;
-}
-
 nav {
 transition: all .3s ease;
 background: #000000;
@@ -21,7 +16,6 @@ background: #000000;
 nav a {
 text-decoration: none;
 color: white;
-font-weight: lighter;
 }
 
 nav .menu {
@@ -84,7 +78,7 @@ nav .submenu .submenu-container {
 display: flex;
 flex-direction: column;
 padding: 30px 45px;
-font-size: 1.3em;
+font-size: 1rem;
 }
 
 nav .submenu.open a {
@@ -239,7 +233,7 @@ background: transparent;
 color: #fff;
 border: none;
 outline: none;
-font-size: 16px;
+font-size: 1rem;
 }
 .search-form input::placeholder{
 color: #fff;
@@ -249,9 +243,8 @@ content: '\f002';
 position: absolute;
 top: 12px;
 left: -26px;
-font-size: 18px;
+font-size: 1rem;
 color: #fff;
-font-family: fontAwesome;
 }
 .close{
 position: absolute;
@@ -259,7 +252,7 @@ right: 0;
 top: 0;
 padding: auto;
 color: #fff;
-font-size: 18px;
+font-size: 1rem;
 text-align: right;
 width: 20px;
 cursor: pointer;
@@ -335,7 +328,7 @@ position: absolute;
 top:1rem; right:1.5rem;
 cursor: pointer;
 color:#000000;
-font-size: 1.5rem;
+font-size: 1rem;
 }
 
 .products-preview .preview .fa-times:hover{
@@ -351,7 +344,6 @@ padding: .2em .3em;
 margin: .8em .5em 0 0;
 right: 0;
 border-radius: 15px;
-font-weight: bolder;
 }
 #cart {
 position: relative;
@@ -361,7 +353,7 @@ margin: 0.3em 0em 0 0;
 }
 #us{
 position: relative;
-font-size: 1.2rem;
+font-size: 1rem;
 cursor: pointer;
 margin: 0.7em 0em 0 0;
 }
@@ -381,7 +373,7 @@ display: block;
 margin: 1px auto;
 transition: color 0.1s ease-in;
 display: block;
-font-size: 1.4rem;
+font-size: 1rem;
 }
 
 .add-to-cart {
@@ -395,7 +387,6 @@ transition: .5s ease;
 outline: none;
 border: none;
 cursor: pointer;
-font-weight: bolder;
 }
 .cart-modal-overlay {
 position: absolute;
@@ -418,7 +409,7 @@ outline: .1rem solid #f700ff;;
 
 #close-btn {
 padding: 10px;
-font-size: 1.5rem;
+font-size: 1rem;
 float: right;
 color: white;
 cursor: pointer;
@@ -435,7 +426,7 @@ font-size: 1rem;
 .total {
 text-align: center;
 margin: 1em 0 2em 0;
-font-size: 1.5rem;
+font-size: 1rem;
 /*   display: none; */
 }
 
@@ -447,7 +438,7 @@ display: block;
 }
 
 .purchase-btn {
-font-size: 0.8rem;
+font-size: 1rem;
 background-color: #d31cc4;
 color: white;
 border-radius: 20px;
@@ -481,13 +472,12 @@ width: 10%;
 }
 
 .remove-btn {
-font-size: 1.2rem;
+font-size: 1rem;
 background-color: #d31cc400;
 color: rgb(255, 255, 255);
 border-radius: 20px;
 padding: 0.6em 1em;
-cursor: pointer;
-font-weight: bold;
+cursor: pointer;    
 }
 
 .remove-btn:active {
@@ -507,13 +497,12 @@ transition: .5s ease;
 outline: none;
 border: none;
 cursor: pointer;
-font-weight: bolder;
 }
 .close-modal {
 position: absolute;
 top: 1.2rem;
 right: 2rem;
-font-size: 1.5rem;
+font-size: 1rem;
 color: #ffffff;
 cursor: pointer;
 border: none;
@@ -523,7 +512,7 @@ background: none;
 transform: rotate(90deg);
 }
 h1,h3 {
-font-size: 2.0rem;
+font-size: 1.0rem;
 color: #fff;
 }
 

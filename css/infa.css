@@ -22,11 +22,6 @@ text-decoration: none;
 transition: all .2s linear;
 }
 
-body {
-margin: 0;
-font-size: medium;
-}
-
 nav {
 transition: all .3s ease;
 background: #000000;

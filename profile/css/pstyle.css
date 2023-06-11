@@ -6,11 +6,6 @@
   transition: all .2s linear;
 }
 
-body {
-  margin: 0;
-  font-size: medium;
-}
-
 nav {
   transition: all .3s ease;
   background: #000000;
@@ -44,7 +39,7 @@ nav ul li:hover > ul {
   display: block;
 }
 .back{
-  font-size: 1.5rem;
+  font-size: 1rem;
 background-color: #000000;
 color: white;
 margin: 10px;

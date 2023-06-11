@@ -7,11 +7,6 @@ text-decoration: none;
 transition: all .2s linear;
 }
 
-body {
-margin: 0;
-font-size: medium;
-font-family: 'Raleway', 'Lato', sans-serif;
-}
 
 nav {
 transition: all .3s ease;
@@ -131,7 +126,7 @@ background: transparent;
 color: #fff;
 border: none;
 outline: none;
-font-size: 16px;
+font-size: 1rem;
 }
 .search-form input::placeholder{
 color: #fff;
@@ -141,7 +136,7 @@ content: '\f002';
 position: absolute;
 top: 12px;
 left: -26px;
-font-size: 18px;
+font-size: 1rem;
 color: #fff;
 font-family: fontAwesome;
 }
@@ -151,7 +146,7 @@ right: 0;
 top: 0;
 padding: auto;
 color: #fff;
-font-size: 18px;
+font-size: 1rem;
 text-align: right;
 width: 20px;
 cursor: pointer;
@@ -227,7 +222,7 @@ position: absolute;
 top:1rem; right:1.5rem;
 cursor: pointer;
 color:#000000;
-font-size: 1.5rem;
+font-size: 1rem;
 }
 
 .products-preview .preview .fa-times:hover{
@@ -272,7 +267,7 @@ display: block;
 margin: 1px auto;
 transition: color 0.1s ease-in;
 display: block;
-font-size: 1.4rem;
+font-size: 1rem;
 }
 
 .add-to-cart {
@@ -308,7 +303,7 @@ outline: .1rem solid #f700ff;;
 }
 
 #close-btn {
-font-size: 1.5rem;
+font-size: 1rem;
 float: right;
 color: white;
 cursor: pointer;
@@ -326,7 +321,7 @@ font-size: 1rem;
 .total {
 text-align: center;
 margin: 1em 0 2em 0;
-font-size: 1.5rem;
+font-size: 1rem;
 /*   display: none; */
 }
 
@@ -338,7 +333,7 @@ display: block;
 }
 
 .purchase-btn {
-font-size: 0.8rem;
+font-size: 1rem;
 background-color: #d31cc4;
 color: white;
 border-radius: 20px;
@@ -361,12 +356,12 @@ margin: 2em;
 .product-quantity {
 height: 1.4rem;
 width: 4rem;
-font-size: 1.4rem;
+font-size: 1rem;
 margin-left: 3rem;
 }
 
 .remove-btn {
-font-size: 1.2rem;
+font-size: 1rem;
 background-color: #d31cc400;
 color: rgb(255, 255, 255);
 border-radius: 20px;
@@ -415,7 +410,7 @@ font-weight: bolder;
 position: absolute;
 top: 1.2rem;
 right: 2rem;
-font-size: 1.5rem;
+font-size: 1rem;
 color: #ffffff;
 cursor: pointer;
 border: none;
@@ -426,7 +421,7 @@ transform: rotate(90deg);
 }
 
 h1,h3 {
-font-size: 2.0rem;
+font-size: 1.0rem;
 color: #fff;
 }
 
