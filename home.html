@@ -53,10 +53,15 @@
 <span>Сортировать по цене</span>
 <button class="sort" id="sort-asc">По возрастанию</button>
 <button class="sort" id="sort-desc">По убыванию</button><br>
-<span>Сортировать по цвету</span><br>
+<span>Сортировка по цвету</span><br>
 <input type="checkbox" name="color" data-color="white">Белый<br>
 <input type="checkbox" name="color" data-color="black">Черный<br>
 <input type="checkbox" name="color" data-color="red">Красный<br>
+<span>Сортировать по доставке</span>
+<input type="checkbox" name="delivery-time" data-time-range="1-5">1-5 дней<br>
+<input type="checkbox" name="delivery-time" data-time-range="10-15">10-15 дней<br>
+<input type="checkbox" name="delivery-time" data-time-range="30">30 дней<br>
+
 </div>
 <div class="cart-modal-overlay">
 <div class="cart-modal">
@@ -89,77 +94,77 @@
 </div>
 <div class="overlay hidden"></div>
 <div class="products-container" id="all">
-<div class="product" data-name="p-1" data-price="100" data-color="red">
+<div class="product" data-name="p-1" data-price="100" data-color="red" data-delivery-time-range="1-5">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_air-jordan-1-mid-white-black-red.jpeg" alt="">
 <span class="description">Air Jordan 1 Mid White Black Red</span>
 <span class="product-price">100$</span>
 </div>
-<div class="product" data-name="p-2" data-price="230" data-color="white">
+<div class="product" data-name="p-2" data-price="230" data-color="white" data-delivery-time-range="10-15">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-wmns-washed-denim.jpeg" alt="">
 <span class="description">Nike Dunk High WMNS Washed Denim</span>
 <span class="product-price">230$</span>
 </div>
-<div class="product" data-name="p-3" data-price="179" data-color="black">
+<div class="product" data-name="p-3" data-price="179" data-color="black" data-delivery-time-range="1-5">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-high-panda.jpeg" alt="">
 <span class="description">Nike Dunk High Panda</span>
 <span class="product-price">179$</span>
 </div>
-<div class="product" data-name="p-4" data-price="170" data-color="black">
+<div class="product" data-name="p-4" data-price="170" data-color="black" data-delivery-time-range="10-15">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-force-1-low-sanddrift.jpeg" alt="">
 <span class="description">Nike Air Force 1 Low Sanddrift</span>
 <span class="product-price">170$</span>
 </div>
-<div class="product" data-name="p-5" data-price="70" data-color="black">
+<div class="product" data-name="p-5" data-price="70" data-color="black" data-delivery-time-range="1-5">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-low-wmns-white-black.jpg" alt="">
 <span class="description">Nike Dunk Low WMNS White Black</span>
 <span class="product-price">70$</span>
 </div>
-<div class="product" data-name="p-6" data-price="200" data-color="black">
+<div class="product" data-name="p-6" data-price="200" data-color="black" data-delivery-time-range="30">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_pusha-t-x-adidas-originals-eqt-guidance-93-black-market.jpg" alt="">
 <span class="description">Pusha T x adidas Originals EQT Guidance 93 Black Market</span>
 <span class="product-price">200$</span>
 </div>
-<div class="product" data-name="p-7" data-price="150" data-color="black">
+<div class="product" data-name="p-7" data-price="150" data-color="black" data-delivery-time-range="1-5">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-nmd-r1-core-black-solar-orange.jpg" alt="">
 <span class="description">adidas NMD R1 Core Black Solar Orange</span>
 <span class="product-price">150$</span>
 </div>
-<div class="product" data-name="p-8" data-price="70" data-color="white">
+<div class="product" data-name="p-8" data-price="70" data-color="white" data-delivery-time-range="10-15">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-u-path-run-cloud-white.jpg" alt="">
 <span class="description">adidas U_Path Run Cloud White</span>
 <span class="product-price">70$</span>
 </div>
-<div class="product" data-name="p-9" data-price="204" data-color="white">
+<div class="product" data-name="p-9" data-price="204" data-color="white" data-delivery-time-range="30">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-crazy-1-lakers-home.png" alt="">
 <span class="description">adidas Crazy 1 Lakers Home</span>
 <span class="product-price">204$</span>
 </div>
-<div class="product" data-name="p-10" data-price="110" data-color="black">
+<div class="product" data-name="p-10" data-price="110" data-color="black" data-delivery-time-range="10-15">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-ozweego-core-black-cloud-white.jpg" alt="">
 <span class="description">adidas Ozweego Core Black Cloud White</span>
 <span class="product-price">110$</span>
 </div>
-<div class="product" data-name="p-11" data-price="130" data-color="red">
+<div class="product" data-name="p-11" data-price="130" data-color="red" data-delivery-time-range="1-5">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-nmd-r1-core-red-black.jpg" alt="">
 <span class="description">Adidas NMD R1 Core Red Black</span>
 <span class="product-price">130$</span>
 </div>
-<div class="product" data-name="p-12" data-price="110" data-color="red">
+<div class="product" data-name="p-12" data-price="110" data-color="red" data-delivery-time-range="30">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_adidas-don-issue-4-vivid-red.jpg" alt="">
 <span class="description">Adidas DON Issue 4 Vivid Red</span>
 <span class="product-price">110$</span>
 </div>
-<div class="product" data-name="p-13" data-price="110" data-color="red">
+<div class="product" data-name="p-13" data-price="110" data-color="red" data-delivery-time-range="30">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-air-huarache-triple-red.jpg" alt="">
 <span class="description">Nike Air Huarache Triple Red</span>
 <span class="product-price">110$</span>
 </div>
-<div class="product" data-name="p-14" data-price="115" data-color="red">
+<div class="product" data-name="p-14" data-price="115" data-color="red" data-delivery-time-range="1-5">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_nike-dunk-low-gym-red.jpeg" alt="">
 <span class="description">Nike Dunk Low Gym Red</span>
 <span class="product-price">115$</span>
 </div>
-<div class="product" data-name="p-15" data-price="114" data-color="black">
+<div class="product" data-name="p-15" data-price="114" data-color="black" data-delivery-time-range="30">
 <img class="product-image" src="https://2app.kicksonfire.com/kofapp/upload/events_master_images/ipad_pharrell-x-adidas-nmd-hu-trail-holi-black.jpg" alt="">
 <span class="description">Pharrell X Adidas NMD Hu Trail Holi Black</span>
 <span class="product-price">114$</span>
