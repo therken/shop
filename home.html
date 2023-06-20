@@ -50,14 +50,14 @@
 
 <div class="container">
 <div class="filter">
-<span>Сортировать по цене</span>
+    <div class="filter__category">Цена</div>
 <button class="sort" id="sort-asc">По возрастанию</button>
 <button class="sort" id="sort-desc">По убыванию</button><br>
-<span>Сортировка по цвету</span><br>
-<input type="checkbox" name="color" data-color="white">Белый<br>
+<div class="filter__category">По цвету</div>
+<input type="checkbox" class="filter__rule" name="color" data-color="white">Белый<br>
 <input type="checkbox" name="color" data-color="black">Черный<br>
 <input type="checkbox" name="color" data-color="red">Красный<br>
-<span>Сортировать по доставке</span>
+<div class="filter__category">Доставка</div>
 <input type="checkbox" name="delivery-time" data-time-range="1-5">1-5 дней<br>
 <input type="checkbox" name="delivery-time" data-time-range="10-15">10-15 дней<br>
 <input type="checkbox" name="delivery-time" data-time-range="30">30 дней<br>

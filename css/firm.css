@@ -467,11 +467,28 @@ transition: all 250ms ease-in-out;
 }
 .filter {
     width: 10%;
-    background: #bebebe;
+    background: #f0eded;
     padding: 10px 5px;
     margin: 10px 0;
-    box-sizing: border-box; /* Добавляем свойство box-sizing */
-    }
+    box-sizing: border-box;
+  }
+  .filter__category {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #212121;
+  }
+  input[type="checkbox"] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
     .sort{
     background-color: #ffffff;
     color: #000000;
